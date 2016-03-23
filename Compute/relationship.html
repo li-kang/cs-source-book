@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>枚举 | C# Source Book</title>
+        <title>关系运算 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Data/struct.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../Data/const.html" />
+    <link rel="prev" href="../Compute/arithmetic.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="2.3"
-        data-chapter-title="枚举"
-        data-filepath="Data/enum.md"
+        data-level="3.3"
+        data-chapter-title="关系运算"
+        data-filepath="Compute/relationship.md"
         data-basepath=".."
         data-revision="Thu Mar 24 2016 02:17:47 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -143,7 +143,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="Data/enum.html">
+        <li class="chapter " data-level="2.3" data-path="Data/enum.html">
             
                 
                     <a href="../Data/enum.html">
@@ -239,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="Compute/relationship.html">
+        <li class="chapter active" data-level="3.3" data-path="Compute/relationship.html">
             
                 
                     <a href="../Compute/relationship.html">
@@ -576,52 +576,14 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x679A;&#x4E3E;">&#x679A;&#x4E3E;</h1>
-<h2 id="&#x679A;&#x4E3E;&#x7684;&#x5B9A;&#x4E49;">&#x679A;&#x4E3E;&#x7684;&#x5B9A;&#x4E49;</h2>
+                        <h1 id="&#x5173;&#x7CFB;&#x8FD0;&#x7B97;">&#x5173;&#x7CFB;&#x8FD0;&#x7B97;</h1>
 <ul>
-<li>&#x5F53;&#x67D0;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x53D6;&#x503C;&#x662F;&#x6709;&#x9650;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x7528;&#x679A;&#x4E3E;&#x6765;&#x5B9A;&#x4E49;&#x3002;</li>
-<li>&#x679A;&#x4E3E;&#x662F;&#x4E00;&#x79CD;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
-<li>&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x901A;&#x5E38;&#x5B9A;&#x4E49;&#x5728;namespace&#x91CC;&#x3002;<pre><code class="lang-CS"><span class="hljs-keyword">enum</span> Season
-{
-          Spring, 
-          Summer,
-          Autumn,
-          Winter
-}
-</code></pre>
-</li>
+<li>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x5305;&#x62EC;&#xFF1A;<code>&gt;</code>&#x3001;<code>&lt;</code>&#x3001;<code>&gt;=</code>&#x3001;<code>&lt;=</code>&#x3001;<code>==</code>&#x3001;<code>!=</code>&#x3002;</li>
+<li><code>==</code>&#x8868;&#x793A;&#x7B49;&#x4E8E;&#xFF0C;<code>=</code>&#x8868;&#x793A;&#x8D4B;&#x503C;&#x3002;</li>
+<li>&#x5173;&#x7CFB;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;bool&#x503C;&#x3002;</li>
 </ul>
-<h2 id="&#x679A;&#x4E3E;&#x7684;&#x4F7F;&#x7528;">&#x679A;&#x4E3E;&#x7684;&#x4F7F;&#x7528;</h2>
-<ul>
-<li>&#x65E2;&#x7136;&#x679A;&#x4E3E;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x3002;</li>
-<li>&#x4F7F;&#x7528;&#x679A;&#x4E3E;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF1A;&#x63D0;&#x9AD8;&#x4E86;&#x53EF;&#x8BFB;&#x6027;&#xFF1B;&#x9650;&#x5B9A;&#x4E86;&#x6570;&#x636E;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x3002;<pre><code class="lang-CS"><span class="hljs-comment">// &#x7528;&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x7C7B;&#x578B;Season&#x548C;&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;int&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;</span>
-<span class="hljs-comment">// &#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x7528;int&#x6765;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x3002;</span>
-<span class="hljs-comment">// int a = 1;</span>
-Season currentSeason = Season.Spring;
-</code></pre>
-</li>
-</ul>
-<h2 id="&#x679A;&#x4E3E;&#x7684;&#x672C;&#x8D28;">&#x679A;&#x4E3E;&#x7684;&#x672C;&#x8D28;</h2>
-<ul>
-<li>&#x679A;&#x4E3E;&#x7684;&#x672C;&#x8D28;&#x5C31;&#x662F;<code>int</code>&#x5E38;&#x91CF;&#x3002;</li>
-<li><code>int</code>&#x548C;&#x679A;&#x4E3E;&#x503C;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x8F6C;&#x5316;&#x3002;</li>
-</ul>
-<pre><code class="lang-CS"><span class="hljs-comment">//&#x5C06;&#x679A;&#x4E3E;&#x663E;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;int</span>
-Console.WriteLine((<span class="hljs-keyword">int</span>)Season.Spring); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;0</span>
-
-<span class="hljs-comment">// &#x5C06;int&#x663E;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;&#x679A;&#x4E3E;</span>
-Console.WriteLine((Season)<span class="hljs-number">1</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;Summer</span>
-</code></pre>
-<ul>
-<li>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x679A;&#x4E3E;&#x9879;&#x7684;&#x503C;&#x3002;</li>
-</ul>
-<pre><code class="lang-CS"><span class="hljs-keyword">enum</span> Season
-{
-            Spring = <span class="hljs-number">1</span>,  <span class="hljs-comment">// &#x8FD9;&#x65F6;Season.Spring&#x8F6C;&#x4E3A;int&#x540E;&#x7684;&#x503C;&#x662F;1</span>
-            Summer,      <span class="hljs-comment">// Spring&#x4E4B;&#x540E;&#x7684;&#x9879;&#x4F1A;&#x81EA;&#x52A8;&#x52A0;1</span>
-            Autumn,      <span class="hljs-comment">// Summer = 2, Autumn = 3, Winter = 4</span>
-            Winter
-}
+<pre><code class="lang-CS">Console.WriteLine(<span class="hljs-number">5</span> == <span class="hljs-number">4</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;False</span>
+<span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>; <span class="hljs-comment">// &#x628A;1&#x8D4B;&#x503C;&#x7ED9;a</span>
 </code></pre>
 
                     
@@ -633,10 +595,10 @@ Console.WriteLine((Season)<span class="hljs-number">1</span>); <span class="hljs
         </div>
 
         
-        <a href="../Data/const.html" class="navigation navigation-prev " aria-label="Previous page: 常量"><i class="fa fa-angle-left"></i></a>
+        <a href="../Compute/arithmetic.html" class="navigation navigation-prev " aria-label="Previous page: 算术运算"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Data/struct.html" class="navigation navigation-next " aria-label="Next page: 结构"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

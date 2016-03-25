@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>扑克牌 | C# Source Book</title>
+        <title>逻辑运算 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Projects/2048.html" />
+    <link rel="next" href="../Compute/bit.html" />
     
     
-    <link rel="prev" href="../while.html" />
+    <link rel="prev" href="../Compute/relationship.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="9.1"
-        data-chapter-title="扑克牌"
-        data-filepath="Projects/cards.md"
+        data-level="3.4"
+        data-chapter-title="逻辑运算"
+        data-filepath="Compute/logic.md"
         data-basepath=".."
         data-revision="Fri Mar 25 2016 14:15:07 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -254,7 +254,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="Compute/logic.html">
+        <li class="chapter active" data-level="3.4" data-path="Compute/logic.html">
             
                 
                     <a href="../Compute/logic.html">
@@ -492,7 +492,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="9.1" data-path="Projects/cards.html">
+        <li class="chapter " data-level="9.1" data-path="Projects/cards.html">
             
                 
                     <a href="../Projects/cards.html">
@@ -651,8 +651,95 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x6251;&#x514B;&#x724C;">&#x6251;&#x514B;&#x724C;</h1>
-<h2 id="&#x5B9A;&#x4E49;&#x6251;&#x514B;&#x724C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x5B9A;&#x4E49;&#x6251;&#x514B;&#x724C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+                        <h1 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;</h1>
+<h2 id="&#x4E0E;&#x8FD0;&#x7B97;">&#x4E0E;&#x8FD0;&#x7B97;</h2>
+<ul>
+<li>&#x4E0E;&#x8FD0;&#x7B97;&#x7528;<code>&amp;&amp;</code>&#x8868;&#x793A;&#x3002;</li>
+<li><code>A &amp;&amp; B</code> &#x53EA;&#x6709;&#x5F53;A&#x548C;B&#x90FD;&#x4F1A;&#x771F;&#xFF0C;&#x7ED3;&#x679C;&#x624D;&#x4F1A;&#x771F;&#x3002;</li>
+<li><code>A &amp;&amp; B</code> &#x5982;&#x679C;A&#x4E3A;&#x5047;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x8BA1;&#x7B97;B&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;A&#x4E3A;&#x5047;&#x7ED3;&#x679C;&#x4E00;&#x5B9A;&#x4E3A;&#x5047;&#x3002;</li>
+</ul>
+<h2 id="&#x6216;&#x8FD0;&#x7B97;">&#x6216;&#x8FD0;&#x7B97;</h2>
+<ul>
+<li>&#x6216;&#x8FD0;&#x7B97;&#x7528;<code>||</code>&#x8868;&#x793A;&#x3002;</li>
+<li><code>A || B</code> &#x53EA;&#x8981;&#x5F53;A&#x548C;B&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x4E3A;&#x771F;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x4E3A;&#x771F;&#x3002;</li>
+<li><code>A || B</code> &#x5982;&#x679C;A&#x4E3A;&#x771F;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x8BA1;&#x7B97;B&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;A&#x4E3A;&#x771F;&#x7ED3;&#x679C;&#x4E00;&#x5B9A;&#x4E3A;&#x771F;&#x3002;</li>
+</ul>
+<h2 id="&#x975E;&#x8FD0;&#x7B97;">&#x975E;&#x8FD0;&#x7B97;</h2>
+<ul>
+<li>&#x975E;&#x8FD0;&#x7B97;&#x662F;&#x4E00;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</li>
+<li><code>!true</code>&#x7684;&#x7ED3;&#x679C;&#x4E3A;<code>false</code>&#x3002;</li>
+<li><code>!false</code>&#x7684;&#x7ED3;&#x679C;&#x4E3A;<code>true</code>&#x3002;</li>
+</ul>
+<h2 id="demo">Demo</h2>
+<ul>
+<li>&#x660E;&#x5929;&#x6211;&#x4EEC;&#x73ED;&#x7684;&#x7537;&#x751F;&#x548C;&#x5973;&#x751F;&#x53BB;&#x6625;&#x6E38;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-keyword">using</span> System;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">SourceBook</span>
+{
+    <span class="hljs-keyword">enum</span> Sex { Male, Female }
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            Sex sex1 = Sex.Female;
+            Sex sex2 = Sex.Male;
+
+            Console.WriteLine(sex1 == Sex.Female || sex1 == Sex.Male); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
+            Console.WriteLine(sex2 == Sex.Female || sex2 == Sex.Male); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>&#x660E;&#x5929;&#x6211;&#x4EEC;&#x73ED;&#x5E74;&#x6EE1;18&#x5C81;&#x7684;&#x957F;&#x5934;&#x53D1;&#x5973;&#x751F;&#x53BB;&#x6625;&#x6E38;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-keyword">using</span> System;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">SourceBook</span>
+{
+    <span class="hljs-keyword">enum</span> Sex { Male, Female }
+    <span class="hljs-keyword">struct</span> Student
+    {
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Age;
+      <span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> HearLength;
+      <span class="hljs-keyword">public</span> Sex StudentSex;
+    }
+
+    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+    {
+        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
+        </span>{
+            <span class="hljs-comment">// &#x5B66;&#x751F;1</span>
+            Student s1 = <span class="hljs-keyword">new</span> Student();
+            s1.Age = <span class="hljs-number">18</span>;
+            s1.HearLength = <span class="hljs-number">0.8</span>;
+            s1.StudentSex = Sex.Female;
+
+            <span class="hljs-comment">// &#x5B66;&#x751F;2</span>
+            Student s2 = <span class="hljs-keyword">new</span> Student();
+            s2.Age = <span class="hljs-number">19</span>;
+            s2.HearLength = <span class="hljs-number">0.01</span>;
+            s2.StudentSex = Sex.Male;
+
+            <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x662F;&#x5426;&#x80FD;&#x53BB;&#x6625;&#x6E38;</span>
+            Console.WriteLine(s1.Age &gt;= <span class="hljs-number">18</span> &amp;&amp; s1.HearLength &gt; <span class="hljs-number">0.3</span> &amp;&amp; s1.StudentSex == Sex.Female); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
+            Console.WriteLine(s2.Age &gt;= <span class="hljs-number">18</span> &amp;&amp; s2.HearLength &gt; <span class="hljs-number">0.3</span> &amp;&amp; s2.StudentSex == Sex.Female); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;False</span>
+        }
+    }
+}
+</code></pre>
+<ul>
+<li>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6309;&#x4E0B;&#x548C;&#x62AC;&#x8D77;&#x7684;&#x6309;&#x94AE;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-comment">// &#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x4E86;&#x53D8;&#x91CF;isPressed&#x8868;&#x793A;&#x6309;&#x94AE;&#x662F;&#x5426;&#x6309;&#x4E0B;</span>
+<span class="hljs-comment">// bool isPressed = false; </span>
+
+<span class="hljs-comment">// &#x6309;&#x4E0B;&#x548C;&#x62AC;&#x8D77;&#x7684;&#x6309;&#x94AE;</span>
+isPressed = !isPressed;
+</code></pre>
 
                     
                     </section>
@@ -663,10 +750,10 @@
         </div>
 
         
-        <a href="../while.html" class="navigation navigation-prev " aria-label="Previous page: 循环逻辑-while"><i class="fa fa-angle-left"></i></a>
+        <a href="../Compute/relationship.html" class="navigation navigation-prev " aria-label="Previous page: 关系运算"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Projects/2048.html" class="navigation navigation-next " aria-label="Next page: 2048"><i class="fa fa-angle-right"></i></a>
+        <a href="../Compute/bit.html" class="navigation navigation-next " aria-label="Next page: 位运算"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

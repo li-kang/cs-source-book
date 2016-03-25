@@ -53,7 +53,7 @@
         data-chapter-title="运算"
         data-filepath="Compute/compute.md"
         data-basepath=".."
-        data-revision="Thu Mar 24 2016 02:17:47 GMT+0800 (中国标准时间)"
+        data-revision="Fri Mar 25 2016 14:15:07 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -254,23 +254,47 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" >
+        <li class="chapter " data-level="3.4" data-path="Compute/logic.html">
             
-            <span><b>3.4.</b> 逻辑运算</span>
+                
+                    <a href="../Compute/logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        逻辑运算
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.5" >
+        <li class="chapter " data-level="3.5" data-path="Compute/bit.html">
             
-            <span><b>3.5.</b> 位运算</span>
+                
+                    <a href="../Compute/bit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        位运算
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.6" >
+        <li class="chapter " data-level="3.6" data-path="Compute/three.html">
             
-            <span><b>3.6.</b> 三目运算</span>
+                
+                    <a href="../Compute/three.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        三目运算
+                    </a>
             
             
         </li>
@@ -295,16 +319,39 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" >
+        <li class="chapter " data-level="4.2" data-path="Logic/if.html">
             
-            <span><b>4.2.</b> 选择</span>
+                
+                    <a href="../Logic/if.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        选择逻辑-if
+                    </a>
             
             
         </li>
     
         <li class="chapter " data-level="4.3" >
             
-            <span><b>4.3.</b> 循环</span>
+            <span><b>4.3.</b> 选择逻辑-switch</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="while.html">
+            
+                
+                    <a href="../while.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        循环逻辑-while
+                    </a>
             
             
         </li>
@@ -359,6 +406,20 @@
         <li class="chapter " data-level="6.3" >
             
             <span><b>6.3.</b> 多态</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" >
+            
+            <span><b>6.4.</b> 接口</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+            <span><b>6.5.</b> 委托与事件</span>
             
             
         </li>
@@ -538,6 +599,20 @@
             
         </li>
     
+        <li class="chapter " data-level="10.5" >
+            
+            <span><b>10.5.</b> 编程思想（2）循环的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" >
+            
+            <span><b>10.6.</b> 编程思想（3）变量的使用</span>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -577,8 +652,24 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x8FD0;&#x7B97;">&#x8FD0;&#x7B97;</h1>
+<h2 id="&#x8FD0;&#x7B97;&#x7684;&#x610F;&#x4E49;">&#x8FD0;&#x7B97;&#x7684;&#x610F;&#x4E49;</h2>
 <ul>
-<li>&#x8FD0;&#x7B97;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x8868;&#x793A;&#x884C;&#x4E3A;&#x3002;</li>
+<li>&#x7F16;&#x7A0B;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;<code>&#x884C;&#x4E3A;</code>&#x90FD;&#x53EF;&#x4EE5;&#x7528;<code>&#x591A;&#x4E2A;&#x8FD0;&#x7B97;</code>&#x6765;&#x8868;&#x793A;&#x3002;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-comment">// &#x8717;&#x725B;&#x5F80;&#x4E0A;&#x722C;&#x4E86;3&#x7C73;</span>
+<span class="hljs-keyword">int</span> position = <span class="hljs-number">0</span>; <span class="hljs-comment">// position&#x8868;&#x793A;&#x8717;&#x725B;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</span>
+position = position + <span class="hljs-number">3</span>; <span class="hljs-comment">// &#x8717;&#x725B;&#x5F80;&#x4E0A;&#x722C;&#x4E86;3&#x7C73;</span>
+</code></pre>
+<pre><code class="lang-CS"><span class="hljs-comment">// &#x653B;&#x51FB;</span>
+<span class="hljs-keyword">int</span> mp = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x73A9;&#x5BB6;&#x5F53;&#x524D;&#x7684;&#x9B54;&#x6CD5;&#x503C;&#x3002;</span>
+<span class="hljs-keyword">int</span> monsterHp = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x602A;&#x7269;&#x5F53;&#x524D;&#x7684;&#x8840;&#x91CF;</span>
+
+mp = mp - <span class="hljs-number">30</span>; <span class="hljs-comment">// &#x653B;&#x51FB;&#x65F6;&#x7528;&#x6389;&#x4E86;30&#x7684;MP</span>
+monsterHp = monsterHp - <span class="hljs-number">50</span>; <span class="hljs-comment">// &#x6253;&#x6389;&#x4E86;&#x602A;&#x7269;50&#x70B9;&#x8840;</span>
+</code></pre>
+<h2 id="&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;">&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;</h2>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>()</code>&#x63A7;&#x5236;&#x8FD0;&#x7B97;&#x7684;&#x987A;&#x5E8F;&#x3002;</li>
 </ul>
 
                     

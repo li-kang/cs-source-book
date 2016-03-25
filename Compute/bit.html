@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>扑克牌 | C# Source Book</title>
+        <title>位运算 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Projects/2048.html" />
+    <link rel="next" href="../Compute/three.html" />
     
     
-    <link rel="prev" href="../while.html" />
+    <link rel="prev" href="../Compute/logic.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="9.1"
-        data-chapter-title="扑克牌"
-        data-filepath="Projects/cards.md"
+        data-level="3.5"
+        data-chapter-title="位运算"
+        data-filepath="Compute/bit.md"
         data-basepath=".."
         data-revision="Fri Mar 25 2016 14:15:07 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -269,7 +269,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="Compute/bit.html">
+        <li class="chapter active" data-level="3.5" data-path="Compute/bit.html">
             
                 
                     <a href="../Compute/bit.html">
@@ -492,7 +492,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="9.1" data-path="Projects/cards.html">
+        <li class="chapter " data-level="9.1" data-path="Projects/cards.html">
             
                 
                     <a href="../Projects/cards.html">
@@ -651,8 +651,53 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x6251;&#x514B;&#x724C;">&#x6251;&#x514B;&#x724C;</h1>
-<h2 id="&#x5B9A;&#x4E49;&#x6251;&#x514B;&#x724C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x5B9A;&#x4E49;&#x6251;&#x514B;&#x724C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+                        <h1 id="&#x4F4D;&#x8FD0;&#x7B97;">&#x4F4D;&#x8FD0;&#x7B97;</h1>
+<ul>
+<li>&#x4F4D;&#x8FD0;&#x7B97;&#x662F;&#x7528;&#x6570;&#x636E;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#x3002;</li>
+<li>&#x6309;&#x4F4D;&#x5F02;&#x6216;&#xFF0C;&#x76F8;&#x5F02;&#x4E3A;1&#xFF0C;&#x76F8;&#x540C;&#x4E3A;0&#x3002;</li>
+</ul>
+<p>&#x5047;&#x8BBE;&#x53D8;&#x91CF; A &#x7684;&#x503C;&#x4E3A; 60&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x4E3A;<code>0011 1100</code>&#xFF0C;&#x53D8;&#x91CF; B &#x7684;&#x503C;&#x4E3A; 13&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x4E3A;<code>0000 1101</code>&#xFF0C;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8FD0;&#x7B97;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x5B9E;&#x4F8B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>&#x6309;&#x4F4D;&#x4E0E;</td>
+<td>A &amp; B =&gt; 0000 1100</td>
+</tr>
+<tr>
+<td></td>
+<td>&#x6309;&#x4F4D;&#x6216;</td>
+<td>A  B =&gt; 0011 1101</td>
+</tr>
+<tr>
+<td>~</td>
+<td>&#x6309;&#x4F4D;&#x975E;</td>
+<td>~A =&gt; 1100 0011</td>
+</tr>
+<tr>
+<td>^</td>
+<td>&#x6309;&#x4F4D;&#x5F02;&#x6216;</td>
+<td>A ^ B =&gt; 0011 0001</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>&#x6309;&#x4F4D;&#x5DE6;&#x79FB;</td>
+<td>A &lt;&lt; 2 =&gt; 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>&#x6309;&#x4F4D;&#x53F3;&#x79FB;</td>
+<td>A &gt;&gt; 3 =&gt; 0000 0111</td>
+</tr>
+</tbody>
+</table>
 
                     
                     </section>
@@ -663,10 +708,10 @@
         </div>
 
         
-        <a href="../while.html" class="navigation navigation-prev " aria-label="Previous page: 循环逻辑-while"><i class="fa fa-angle-left"></i></a>
+        <a href="../Compute/logic.html" class="navigation navigation-prev " aria-label="Previous page: 逻辑运算"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Projects/2048.html" class="navigation navigation-next " aria-label="Next page: 2048"><i class="fa fa-angle-right"></i></a>
+        <a href="../Compute/three.html" class="navigation navigation-next " aria-label="Next page: 三目运算"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

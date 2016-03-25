@@ -53,7 +53,7 @@
         data-chapter-title="赋值运算"
         data-filepath="Compute/assign.md"
         data-basepath=".."
-        data-revision="Thu Mar 24 2016 02:17:47 GMT+0800 (中国标准时间)"
+        data-revision="Fri Mar 25 2016 14:15:07 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -254,23 +254,47 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" >
+        <li class="chapter " data-level="3.4" data-path="Compute/logic.html">
             
-            <span><b>3.4.</b> 逻辑运算</span>
+                
+                    <a href="../Compute/logic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        逻辑运算
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.5" >
+        <li class="chapter " data-level="3.5" data-path="Compute/bit.html">
             
-            <span><b>3.5.</b> 位运算</span>
+                
+                    <a href="../Compute/bit.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        位运算
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="3.6" >
+        <li class="chapter " data-level="3.6" data-path="Compute/three.html">
             
-            <span><b>3.6.</b> 三目运算</span>
+                
+                    <a href="../Compute/three.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        三目运算
+                    </a>
             
             
         </li>
@@ -295,16 +319,39 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" >
+        <li class="chapter " data-level="4.2" data-path="Logic/if.html">
             
-            <span><b>4.2.</b> 选择</span>
+                
+                    <a href="../Logic/if.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        选择逻辑-if
+                    </a>
             
             
         </li>
     
         <li class="chapter " data-level="4.3" >
             
-            <span><b>4.3.</b> 循环</span>
+            <span><b>4.3.</b> 选择逻辑-switch</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="while.html">
+            
+                
+                    <a href="../while.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        循环逻辑-while
+                    </a>
             
             
         </li>
@@ -359,6 +406,20 @@
         <li class="chapter " data-level="6.3" >
             
             <span><b>6.3.</b> 多态</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" >
+            
+            <span><b>6.4.</b> 接口</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" >
+            
+            <span><b>6.5.</b> 委托与事件</span>
             
             
         </li>
@@ -538,6 +599,20 @@
             
         </li>
     
+        <li class="chapter " data-level="10.5" >
+            
+            <span><b>10.5.</b> 编程思想（2）循环的使用</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" >
+            
+            <span><b>10.6.</b> 编程思想（3）变量的使用</span>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -577,21 +652,28 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;">&#x8D4B;&#x503C;&#x8FD0;&#x7B97;</h1>
+<h2 id="&#x8D4B;&#x503C;&#x8FD0;&#x7B97;">&#x8D4B;&#x503C;&#x8FD0;&#x7B97;</h2>
+<ul>
+<li><p>&#x8D4B;&#x503C;&#x53F7;<code>=</code>&#x7528;&#x4E8E;&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;&#x53D8;&#x91CF;&#x3002;</p>
+<blockquote>
+<p>&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x6709;&#x4E24;&#x79CD;&#xFF1A;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;&#xFF0C;&#x800C;&#x5199;&#x5165;&#x65F6;&#x53EA;&#x80FD;&#x7528;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x3002;</p>
+</blockquote>
+</li>
+<li><p><code>&#x8D4B;&#x503C;</code>&#x4E0D;&#x662F;<code>&#x7B49;&#x4E8E;</code>&#x3002;</p>
+</li>
+<li>&#x8D4B;&#x503C;&#x53F7;&#x4E24;&#x8FB9;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;<strong>&#x4E00;&#x81F4;&#x7684;</strong>&#x3002;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>;
+a = a + <span class="hljs-number">1</span>; <span class="hljs-comment">// &#x628A;a&#x7684;&#x503C;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x52A0;1&#xFF0C;&#x518D;&#x8D4B;&#x503C;&#x7ED9;a&#x3002;</span>
+Console.WriteLine(a); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;2</span>
+</code></pre>
+<h2 id="&#x8868;&#x8FBE;&#x5F0F;">&#x8868;&#x8FBE;&#x5F0F;</h2>
 <ul>
 <li>&#x5305;&#x542B;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x7684;&#x8BED;&#x53E5;&#x53EB;&#x8868;&#x8FBE;&#x5F0F;&#x3002;</li>
 <li>&#x5355;&#x72EC;&#x7684;&#x8FD0;&#x7B97;&#x662F;&#x4E0D;&#x80FD;&#x505A;&#x4E3A;&#x8BED;&#x53E5;&#x7684;&#x3002;</li>
 </ul>
 <pre><code class="lang-CS"><span class="hljs-comment">// 1+ 2; // Error:&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x3002;</span>
 <span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span> + <span class="hljs-number">2</span>; <span class="hljs-comment">// OK&#xFF1A;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x505A;&#x4E3A;&#x4E00;&#x4E2A;&#x8BED;&#x53E5;&#x3002;</span>
-</code></pre>
-<ul>
-<li>&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x6709;&#x4E24;&#x79CD;&#xFF1A;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;&#xFF0C;&#x800C;&#x5199;&#x5165;&#x65F6;&#x53EA;&#x80FD;&#x7528;&#x8D4B;&#x503C;&#x8FD0;&#x7B97;&#x3002;</li>
-<li><strong>&#x8D4B;&#x503C;&#x53F7;&#x4E24;&#x8FB9;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x4E00;&#x81F4;&#x7684;</strong>&#x3002;</li>
-<li><code>&#x8D4B;&#x503C;</code>&#x4E0D;&#x662F;<code>&#x7B49;&#x4E8E;</code>&#x3002;</li>
-</ul>
-<pre><code class="lang-CS"><span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>;
-a = a + <span class="hljs-number">1</span>; <span class="hljs-comment">// &#x628A;a&#x7684;&#x503C;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x52A0;1&#xFF0C;&#x518D;&#x8D4B;&#x503C;&#x7ED9;a&#x3002;</span>
-Console.WriteLine(a); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;2</span>
 </code></pre>
 
                     

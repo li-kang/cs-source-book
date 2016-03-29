@@ -53,7 +53,7 @@
         data-chapter-title="函数"
         data-filepath="Model/function.md"
         data-basepath=".."
-        data-revision="Tue Mar 29 2016 23:27:47 GMT+0800 (中国标准时间)"
+        data-revision="Tue Mar 29 2016 23:40:47 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -744,8 +744,12 @@
 <li>&#x53D8;&#x91CF;&#x4EA7;&#x751F;&#x65F6;&#x4F1A;&#x5206;&#x914D;&#x5BF9;&#x5E94;&#x5927;&#x5C0F;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x6D88;&#x4EA1;&#x65F6;&#x4F1A;&#x56DE;&#x6536;&#x8FD9;&#x5757;&#x5185;&#x5B58;&#x3002;</li>
 <li>&#x53D8;&#x91CF;&#x6D88;&#x4EA1;&#x540E;&#xFF0C;&#x5176;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5C31;&#x4E00;&#x540C;&#x6D88;&#x4EA1;&#x4E86;&#x3002;</li>
 </ul>
-<pre><code class="lang-CS"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Fun</span>(<span class="hljs-params"></span>) 
+<pre><code class="lang-CS"><span class="hljs-comment">// global&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x6BCF;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x3002;</span>
+<span class="hljs-keyword">int</span> global = <span class="hljs-number">100</span>; 
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Fun</span>(<span class="hljs-params"></span>) 
 </span>{
+  <span class="hljs-comment">// a&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x5F53;&#x524D;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#x8BBF;&#x95EE;&#x3002;</span>
   <span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>; <span class="hljs-comment">// a&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</span>
   <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) <span class="hljs-comment">// i&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</span>
   {
@@ -775,7 +779,6 @@
 <li>&#x4E00;&#x65E6;<code>return</code>&#x5C31;&#x4E0D;&#x518D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x51FD;&#x6570;&#x4E86;&#x3002;</li>
 <li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>int</code>&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;<code>int</code>&#x7684;&#x503C;&#x6765;&#x7528;&#x3002;</li>
 </ul>
-<h2 id="&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;">&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;</h2>
 <h2 id="&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;">&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;</h2>
 <ul>
 <li>&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x540C;&#x540D;&#xFF0C;&#x8FD9;&#x53EB;&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#x3002;</li>
@@ -785,12 +788,11 @@
 <h2 id="&#x8F93;&#x51FA;&#x53C2;&#x6570;">&#x8F93;&#x51FA;&#x53C2;&#x6570;</h2>
 <h2 id="&#x9012;&#x5F52;&#x8C03;&#x7528;">&#x9012;&#x5F52;&#x8C03;&#x7528;</h2>
 <ul>
-<li>&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x8C03;&#x7528;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</li>
-<li>&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;</li>
 <li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4EFB;&#x4F55;&#x5DF2;&#x77E5;&#x51FD;&#x6570;</li>
 <li>&#x5982;&#x679C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#xFF0C;&#x53EB;&#x9012;&#x5F52;&#x3002;</li>
-<li>&#x9012;&#x5F52;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;</li>
-<li>&#x9012;&#x5F52;&#x7684;&#x54F2;&#x5B66;</li>
+<li>&#x9012;&#x5F52;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x3002;</li>
+<li>&#x9012;&#x5F52;&#x7684;&#x54F2;&#x5B66;&#xFF1A;&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;&#x5DF2;&#x77E5;&#x3002;</li>
+<li>&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x51FD;&#x6570;&#x4E0E;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x5E76;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#xFF0C;&#x53EA;&#x8981;&#x660E;&#x786E;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</li>
 </ul>
 <h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <p>&#x603B;&#x7ED3;&#x4E0B;&#x51FD;&#x6570;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x51E0;&#x70B9;&#xFF1A;</p>

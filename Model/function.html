@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>2048 | C# Source Book</title>
+        <title>函数 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Projects/calculator.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../Projects/cards.html" />
+    <link rel="prev" href="../Logic/do_while.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="9.3"
-        data-chapter-title="2048"
-        data-filepath="Projects/2048.md"
+        data-level="5.1"
+        data-chapter-title="函数"
+        data-filepath="Model/function.md"
         data-basepath=".."
         data-revision="Tue Mar 29 2016 23:27:47 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -407,7 +407,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1" data-path="Model/function.html">
+        <li class="chapter active" data-level="5.1" data-path="Model/function.html">
             
                 
                     <a href="../Model/function.html">
@@ -560,7 +560,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="9.3" data-path="Projects/2048.html">
+        <li class="chapter " data-level="9.3" data-path="Projects/2048.html">
             
                 
                     <a href="../Projects/2048.html">
@@ -712,10 +712,92 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="2048">2048</h1>
+                        <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
+<h2 id="&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;">&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;</h2>
 <ul>
-<li>&#x6253;&#x5370;&#x6E38;&#x620F;&#x4ECB;&#x7ECD;</li>
-<li>&#x83B7;&#x53D6;&#x7528;&#x6237;&#x8F93;&#x5165;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x6A21;&#x5757;&#x5316;&#x3001;&#x590D;&#x7528;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x7528;&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x884C;&#x4E3A;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x7528;&#x6765;&#x6574;&#x5408;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x4E4B;&#x524D;&#x8BB2;&#x8FC7;&#x4E00;&#x7EC4;&#x8FD0;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x884C;&#x4E3A;&#x3002;&#x4F46;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6574;&#x5408;&#x8FD9;&#x7EC4;&#x8FD0;&#x7B97;&#x8BED;&#x53E5;&#x3002;&#x6574;&#x4F53;&#x6765;&#x8BF4;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x884C;&#x4E3A;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-CS"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Func</span>(<span class="hljs-params"></span>)
+</span>{
+
+}
+</code></pre>
+<h2 id="&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;">&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;</h2>
+<ul>
+<li>&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x5C06;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x6267;&#x884C;&#x4E00;&#x904D;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x53CD;&#x590D;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+<pre><code class="lang-CS">
+
+</code></pre>
+<h2 id="&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E0E;&#x5168;&#x5C40;&#x53D8;&#x91CF;">&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x4E0E;&#x5168;&#x5C40;&#x53D8;&#x91CF;</h2>
+<ul>
+<li>&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x6307;&#x5728;&#x54EA;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x901A;&#x5E38;&#x662F;&#x4ECE;&#x7533;&#x660E;&#x5F00;&#x59CB;&#x5230;&#x5305;&#x542B;&#x5B83;&#x7684;&#x90A3;&#x5BF9;<code>{}</code>&#x7ED3;&#x675F;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x6307;&#x4ECE;&#x53D8;&#x91CF;&#x4EA7;&#x751F;&#x5230;&#x6D88;&#x4EA1;&#x7684;&#x65F6;&#x95F4;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E0E;&#x4F5C;&#x7528;&#x57DF;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x53EA;&#x4E0D;&#x8FC7;&#x4ED6;&#x4EEC;&#x4E00;&#x4E2A;&#x662F;&#x65F6;&#x95F4;&#x6982;&#x5FF5;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7A7A;&#x95F4;&#x6982;&#x5FF5;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x4EA7;&#x751F;&#x65F6;&#x4F1A;&#x5206;&#x914D;&#x5BF9;&#x5E94;&#x5927;&#x5C0F;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x6D88;&#x4EA1;&#x65F6;&#x4F1A;&#x56DE;&#x6536;&#x8FD9;&#x5757;&#x5185;&#x5B58;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x6D88;&#x4EA1;&#x540E;&#xFF0C;&#x5176;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x5C31;&#x4E00;&#x540C;&#x6D88;&#x4EA1;&#x4E86;&#x3002;</li>
+</ul>
+<pre><code class="lang-CS"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Fun</span>(<span class="hljs-params"></span>) 
+</span>{
+  <span class="hljs-keyword">int</span> a = <span class="hljs-number">1</span>; <span class="hljs-comment">// a&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</span>
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) <span class="hljs-comment">// i&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x4ECE;&#x8FD9;&#x91CC;&#x5F00;&#x59CB;</span>
+  {
+
+  } <span class="hljs-comment">// i&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5230;&#x8FD9;&#x91CC;&#x7ED3;&#x675F;</span>
+
+  <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x5C31;&#x8BBF;&#x95EE;&#x4E0D;&#x5230;i&#x4E86;</span>
+
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) <span class="hljs-comment">// &#x8FD9;&#x4E2A;i&#x548C;&#x4E4B;&#x524D;&#x7684;i&#x4E0D;&#x51B2;&#x7A81;&#xFF0C;&#x56E0;&#x4E3A;&#x4F5C;&#x7528;&#x57DF;&#x4E0D;&#x4E00;&#x6837;&#x3002;</span>
+  {
+
+  }
+
+} <span class="hljs-comment">// a&#x7684;&#x4F5C;&#x7528;&#x57DF;&#x5230;&#x8FD9;&#x91CC;&#x7ED3;&#x675F;</span>
+</code></pre>
+<h2 id="&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;">&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x4EE3;&#x7801;&#x7684;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4EE3;&#x7801;&#x4E2D;&#x53D8;&#x5316;&#x7684;&#x90E8;&#x5206;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x7528;&#x53D8;&#x91CF;&#x4EE3;&#x66FF;&#x3002;</li>
+<li>&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x5185;&#x8BBF;&#x95EE;&#xFF0C;&#x65E0;&#x6CD5;&#x4ECE;&#x5916;&#x90E8;&#x7ED9;&#x5B83;&#x8D4B;&#x503C;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x4ECE;&#x5916;&#x90E8;&#x7ED9;&#x53C2;&#x6570;&#x8D4B;&#x503C;&#x3002;</li>
+<li>&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+<h2 id="&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;">&#x51FD;&#x6570;&#x7684;&#x8FD4;&#x56DE;&#x503C;</h2>
+<ul>
+<li>&#x5982;&#x679C;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#x5FC5;&#x987B;return&#x3002;&#x800C;&#x4E14;&#x662F;&#x6BCF;&#x4E2A;&#x5206;&#x652F;&#x90FD;&#x6709;<code>return</code>&#x3002;</li>
+<li><code>return</code>&#x7684;&#x7C7B;&#x578B;&#x8981;&#x4E00;&#x81F4;&#x3002;</li>
+<li>&#x4E00;&#x65E6;<code>return</code>&#x5C31;&#x4E0D;&#x518D;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x51FD;&#x6570;&#x4E86;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x8FD4;&#x56DE;<code>int</code>&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x51FD;&#x6570;&#x7684;&#x8C03;&#x7528;&#x5F53;&#x4F5C;&#x4E00;&#x4E2A;<code>int</code>&#x7684;&#x503C;&#x6765;&#x7528;&#x3002;</li>
+</ul>
+<h2 id="&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;">&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;</h2>
+<h2 id="&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;">&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;</h2>
+<ul>
+<li>&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x540C;&#x540D;&#xFF0C;&#x8FD9;&#x53EB;&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#x3002;</li>
+<li>&#x5F53;&#x8C03;&#x7528;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8981;&#x80FD;&#x660E;&#x786E;&#x533A;&#x5206;&#x8C03;&#x7528;&#x7684;&#x662F;&#x54EA;&#x4E2A;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x53C2;&#x6570;&#x4E2A;&#x6570;&#x6765;&#x533A;&#x5206;&#x51FD;&#x6570;&#x7684;&#x91CD;&#x8F7D;&#x3002;</li>
+</ul>
+<h2 id="&#x8F93;&#x51FA;&#x53C2;&#x6570;">&#x8F93;&#x51FA;&#x53C2;&#x6570;</h2>
+<h2 id="&#x9012;&#x5F52;&#x8C03;&#x7528;">&#x9012;&#x5F52;&#x8C03;&#x7528;</h2>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x8C03;&#x7528;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;</li>
+<li>&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x91CD;&#x8F7D;&#x7684;&#x51FD;&#x6570;</li>
+<li>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4EFB;&#x4F55;&#x5DF2;&#x77E5;&#x51FD;&#x6570;</li>
+<li>&#x5982;&#x679C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#xFF0C;&#x53EB;&#x9012;&#x5F52;&#x3002;</li>
+<li>&#x9012;&#x5F52;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;</li>
+<li>&#x9012;&#x5F52;&#x7684;&#x54F2;&#x5B66;</li>
+</ul>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x603B;&#x7ED3;&#x4E0B;&#x51FD;&#x6570;&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x529F;&#x80FD;&#x3002;int Add&#xFF08;int[] data&#xFF09;{ }</li>
+<li>&#x8C03;&#x7528;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x51FD;&#x6570;&#x4F53;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x7684;&#x6267;&#x884C;&#x4E00;&#x904D;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x8FD4;&#x56DE;xx&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5F53;&#x4F5C;xx&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x6765;&#x7528;&#x3002;</li>
 </ul>
 
                     
@@ -727,10 +809,10 @@
         </div>
 
         
-        <a href="../Projects/cards.html" class="navigation navigation-prev " aria-label="Previous page: 扑克牌"><i class="fa fa-angle-left"></i></a>
+        <a href="../Logic/do_while.html" class="navigation navigation-prev " aria-label="Previous page: 循环逻辑-do-while"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Projects/calculator.html" class="navigation navigation-next " aria-label="Next page: 计算器"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

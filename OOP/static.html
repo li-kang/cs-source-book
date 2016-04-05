@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>逻辑运算 | C# Source Book</title>
+        <title>封装-类成员与实例成员 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Compute/bit.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../Compute/relationship.html" />
+    <link rel="prev" href="../OOP/class.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="3.4"
-        data-chapter-title="逻辑运算"
-        data-filepath="Compute/logic.md"
+        data-level="6.2"
+        data-chapter-title="封装-类成员与实例成员"
+        data-filepath="OOP/static.md"
         data-basepath=".."
         data-revision="Tue Apr 05 2016 23:57:39 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -254,7 +254,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.4" data-path="Compute/logic.html">
+        <li class="chapter " data-level="3.4" data-path="Compute/logic.html">
             
                 
                     <a href="../Compute/logic.html">
@@ -465,7 +465,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="OOP/static.html">
+        <li class="chapter active" data-level="6.2" data-path="OOP/static.html">
             
                 
                     <a href="../OOP/static.html">
@@ -750,95 +750,33 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x903B;&#x8F91;&#x8FD0;&#x7B97;">&#x903B;&#x8F91;&#x8FD0;&#x7B97;</h1>
-<h2 id="&#x4E0E;&#x8FD0;&#x7B97;">&#x4E0E;&#x8FD0;&#x7B97;</h2>
+                        <h1 id="&#x5C01;&#x88C5;&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;">&#x5C01;&#x88C5;-&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;</h1>
+<h2 id="&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;">&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;</h2>
 <ul>
-<li>&#x4E0E;&#x8FD0;&#x7B97;&#x7528;<code>&amp;&amp;</code>&#x8868;&#x793A;&#x3002;</li>
-<li><code>A &amp;&amp; B</code> &#x53EA;&#x6709;&#x5F53;A&#x548C;B&#x90FD;&#x4F1A;&#x771F;&#xFF0C;&#x7ED3;&#x679C;&#x624D;&#x4F1A;&#x771F;&#x3002;</li>
-<li><code>A &amp;&amp; B</code> &#x5982;&#x679C;A&#x4E3A;&#x5047;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x8BA1;&#x7B97;B&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;A&#x4E3A;&#x5047;&#x7ED3;&#x679C;&#x4E00;&#x5B9A;&#x4E3A;&#x5047;&#x3002;</li>
+<li>&#x6210;&#x5458;&#x6307;&#x7684;&#x662F;&#x7C7B;&#x4E2D;&#x5C01;&#x88C5;&#x7684;&#x53D8;&#x91CF;&#x3001;&#x51FD;&#x6570;&#x7B49;&#x3002;</li>
+<li>&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x662F;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#xFF0C;&#x7528;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>&#x7C7B;&#x6210;&#x5458;&#x662F;&#x5C5E;&#x4E8E;&#x6574;&#x4E2A;&#x7C7B;&#x7684;&#xFF0C;&#x7528;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;&#x7C7B;&#x6210;&#x5458;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
 </ul>
-<h2 id="&#x6216;&#x8FD0;&#x7B97;">&#x6216;&#x8FD0;&#x7B97;</h2>
+<h2 id="&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x4E0E;&#x7C7B;&#x5E38;&#x91CF;">&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x4E0E;&#x7C7B;&#x5E38;&#x91CF;</h2>
 <ul>
-<li>&#x6216;&#x8FD0;&#x7B97;&#x7528;<code>||</code>&#x8868;&#x793A;&#x3002;</li>
-<li><code>A || B</code> &#x53EA;&#x8981;&#x5F53;A&#x548C;B&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x4E3A;&#x771F;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x4E3A;&#x771F;&#x3002;</li>
-<li><code>A || B</code> &#x5982;&#x679C;A&#x4E3A;&#x771F;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x53BB;&#x8BA1;&#x7B97;B&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x8981;A&#x4E3A;&#x771F;&#x7ED3;&#x679C;&#x4E00;&#x5B9A;&#x4E3A;&#x771F;&#x3002;</li>
+<li><code>const</code>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7C7B;&#x5E38;&#x91CF;&#x3002;</li>
+<li><code>readonly</code>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x3002;</li>
+<li><code>const</code>&#x5E38;&#x91CF;&#x53EA;&#x80FD;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x53EF;&#x4EE5;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
+<li><code>const</code>&#x5E38;&#x91CF;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
+<li><code>const</code>&#x5E38;&#x91CF;&#x5728;&#x6574;&#x4E2A;&#x7C7B;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x7BA1;&#x8FD9;&#x4E2A;&#x7C7B;&#x6709;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x90FD;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x4E00;&#x4EFD;&#x72EC;&#x7ACB;&#x6709;&#x6570;&#x636E;&#x3002;</li>
 </ul>
-<h2 id="&#x975E;&#x8FD0;&#x7B97;">&#x975E;&#x8FD0;&#x7B97;</h2>
+<h2 id="&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;">&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;</h2>
 <ul>
-<li>&#x975E;&#x8FD0;&#x7B97;&#x662F;&#x4E00;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;&#x3002;</li>
-<li><code>!true</code>&#x7684;&#x7ED3;&#x679C;&#x4E3A;<code>false</code>&#x3002;</li>
-<li><code>!false</code>&#x7684;&#x7ED3;&#x679C;&#x4E3A;<code>true</code>&#x3002;</li>
+<li>&#x4E0D;&#x52A0;<code>static</code>&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF1B;&#x52A0;<code>static</code>&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x662F;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x53EB;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;&#x7C7B;&#x53D8;&#x91CF;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>&#x7C7B;&#x53D8;&#x91CF;&#x5728;&#x6574;&#x4E2A;&#x7C7B;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x7BA1;&#x8FD9;&#x4E2A;&#x7C7B;&#x6709;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x90FD;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF1B;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x4E00;&#x4EFD;&#x72EC;&#x7ACB;&#x6709;&#x6570;&#x636E;&#x3002;</li>
 </ul>
-<h2 id="demo">Demo</h2>
+<h2 id="&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x4E0E;&#x7C7B;&#x65B9;&#x6CD5;">&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x4E0E;&#x7C7B;&#x65B9;&#x6CD5;</h2>
 <ul>
-<li>&#x660E;&#x5929;&#x6211;&#x4EEC;&#x73ED;&#x7684;&#x7537;&#x751F;&#x548C;&#x5973;&#x751F;&#x53BB;&#x6625;&#x6E38;</li>
+<li>&#x4E0D;&#x52A0;<code>static</code>&#x7684;&#x51FD;&#x6570;&#x5C31;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;&#x52A0;<code>static</code>&#x7684;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EB;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;&#x7C7B;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x975E;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;</li>
 </ul>
-<pre><code class="lang-CS"><span class="hljs-keyword">using</span> System;
-
-<span class="hljs-keyword">namespace</span> <span class="hljs-title">SourceBook</span>
-{
-    <span class="hljs-keyword">enum</span> Sex { Male, Female }
-
-    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
-    {
-        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
-        </span>{
-            Sex sex1 = Sex.Female;
-            Sex sex2 = Sex.Male;
-
-            Console.WriteLine(sex1 == Sex.Female || sex1 == Sex.Male); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
-            Console.WriteLine(sex2 == Sex.Female || sex2 == Sex.Male); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
-        }
-    }
-}
-</code></pre>
-<ul>
-<li>&#x660E;&#x5929;&#x6211;&#x4EEC;&#x73ED;&#x5E74;&#x6EE1;18&#x5C81;&#x7684;&#x957F;&#x5934;&#x53D1;&#x5973;&#x751F;&#x53BB;&#x6625;&#x6E38;</li>
-</ul>
-<pre><code class="lang-CS"><span class="hljs-keyword">using</span> System;
-
-<span class="hljs-keyword">namespace</span> <span class="hljs-title">SourceBook</span>
-{
-    <span class="hljs-keyword">enum</span> Sex { Male, Female }
-    <span class="hljs-keyword">struct</span> Student
-    {
-      <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Age;
-      <span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> HearLength;
-      <span class="hljs-keyword">public</span> Sex StudentSex;
-    }
-
-    <span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
-    {
-        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-keyword">string</span>[] args</span>)
-        </span>{
-            <span class="hljs-comment">// &#x5B66;&#x751F;1</span>
-            Student s1 = <span class="hljs-keyword">new</span> Student();
-            s1.Age = <span class="hljs-number">18</span>;
-            s1.HearLength = <span class="hljs-number">0.8</span>;
-            s1.StudentSex = Sex.Female;
-
-            <span class="hljs-comment">// &#x5B66;&#x751F;2</span>
-            Student s2 = <span class="hljs-keyword">new</span> Student();
-            s2.Age = <span class="hljs-number">19</span>;
-            s2.HearLength = <span class="hljs-number">0.01</span>;
-            s2.StudentSex = Sex.Male;
-
-            <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x662F;&#x5426;&#x80FD;&#x53BB;&#x6625;&#x6E38;</span>
-            Console.WriteLine(s1.Age &gt;= <span class="hljs-number">18</span> &amp;&amp; s1.HearLength &gt; <span class="hljs-number">0.3</span> &amp;&amp; s1.StudentSex == Sex.Female); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;True</span>
-            Console.WriteLine(s2.Age &gt;= <span class="hljs-number">18</span> &amp;&amp; s2.HearLength &gt; <span class="hljs-number">0.3</span> &amp;&amp; s2.StudentSex == Sex.Female); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;False</span>
-        }
-    }
-}
-</code></pre>
-<ul>
-<li>&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x6309;&#x4E0B;&#x548C;&#x62AC;&#x8D77;&#x7684;&#x6309;&#x94AE;</li>
-</ul>
-<pre><code class="lang-CS"><span class="hljs-comment">// &#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x4E86;&#x53D8;&#x91CF;isPressed&#x8868;&#x793A;&#x6309;&#x94AE;&#x662F;&#x5426;&#x6309;&#x4E0B;</span>
-<span class="hljs-comment">// bool isPressed = false; </span>
-
-<span class="hljs-comment">// &#x6309;&#x4E0B;&#x548C;&#x62AC;&#x8D77;&#x7684;&#x6309;&#x94AE;</span>
-isPressed = !isPressed;
-</code></pre>
 
                     
                     </section>
@@ -849,10 +787,10 @@ isPressed = !isPressed;
         </div>
 
         
-        <a href="../Compute/relationship.html" class="navigation navigation-prev " aria-label="Previous page: 关系运算"><i class="fa fa-angle-left"></i></a>
+        <a href="../OOP/class.html" class="navigation navigation-prev " aria-label="Previous page: 封装"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Compute/bit.html" class="navigation navigation-next " aria-label="Next page: 位运算"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

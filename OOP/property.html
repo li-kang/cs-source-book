@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>数据 | C# Source Book</title>
+        <title>属性 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Data/veriable.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../cs_base.html" />
+    <link rel="prev" href="../OOP/static.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="2"
-        data-chapter-title="数据"
-        data-filepath="Data/data.md"
+        data-level="6.3"
+        data-chapter-title="属性"
+        data-filepath="OOP/property.md"
         data-basepath=".."
         data-revision="Wed Apr 06 2016 22:29:15 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -97,7 +97,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2" data-path="Data/data.html">
+        <li class="chapter " data-level="2" data-path="Data/data.html">
             
                 
                     <a href="../Data/data.html">
@@ -480,7 +480,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="OOP/property.html">
+        <li class="chapter active" data-level="6.3" data-path="OOP/property.html">
             
                 
                     <a href="../OOP/property.html">
@@ -765,81 +765,187 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x6570;&#x636E;">&#x6570;&#x636E;</h1>
-<h2 id="&#x6570;&#x636E;&#x7684;&#x4F5C;&#x7528;">&#x6570;&#x636E;&#x7684;&#x4F5C;&#x7528;</h2>
-<p>&#x6570;&#x636E;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x7A0B;&#x5E8F;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x7269;&#x3002;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x82F1;&#x96C4;&#xFF0C;&#x4E00;&#x53EA;&#x8001;&#x864E;&#x3002;</p>
-<h2 id="&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+                        <h1 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h1>
+<h2 id="&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x7531;&#x6765;">&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x7531;&#x6765;</h2>
+<ul>
+<li>&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x4E8B;&#x7269;&#x7684;&#x7279;&#x5F81;&#x3002;<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+  <span class="hljs-comment">// &#x91D1;&#x5E01;&#x6570;&#x91CF;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> gold;
+}
+</code></pre>
+</li>
+<li>&#x53D8;&#x91CF;&#x6709;&#x4E09;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3001;&#x8BFB;&#x6570;&#x636E;&#x3001;&#x5199;&#x6570;&#x636E;&#x3002;<pre><code class="lang-CS"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+</span>{
+  Hero lk = <span class="hljs-keyword">new</span> Hero();
+  lk.gold = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x5199;&#x6570;&#x636E;</span>
+  Console.WriteLine(lk.gold); <span class="hljs-comment">// &#x8BFB;&#x6570;&#x636E;</span>
+}
+</code></pre>
+</li>
+<li><p>&#x5B9E;&#x73B0;&#x5BF9;&#x8BFB;&#x548C;&#x5199;&#x7684;&#x72EC;&#x7ACB;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x3002;</p>
 <blockquote>
-<p>&#x63CF;&#x8FF0;&#x4E00;&#x4E2A;&#x82F1;&#x96C4;&#x5BF9;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#x8FD8;&#x592A;&#x590D;&#x6742;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x63CF;&#x8FF0;&#x4E0B;&#x4ED6;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x201C;&#x4ED6;&#x53EB;&#x674E;&#x5EB7;&#xFF0C;&#x4ECA;&#x5E74;18&#x5C81;&#xFF0C;&#x8EAB;&#x9AD8;1.81&#xFF0C;&#x6027;&#x522B;N&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x957F;&#x7684;&#x5F88;&#x5E05;&#x5462;&#xFF1F;&#x662F;&#x7684;&#x3002;&#x201D;&#x3002;&#x5176;&#x4E2D;&#x54EA;&#x4E9B;&#x662F;&#x6570;&#x636E;&#x5462;&#xFF1F;</p>
+<p>&#x5982;&#x679C;&#x53D8;&#x91CF;&#x662F;<code>public</code>&#x7684;&#x90A3;&#x4E48;&#x5916;&#x754C;&#x5373;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x4E5F;&#x53EF;&#x4EE5;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x53D8;&#x91CF;&#x662F;<code>private</code>&#x7684;&#x90A3;&#x4E48;&#x5916;&#x754C;&#x5373;&#x4E0D;&#x80FD;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x4E5F;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;&#x7528;&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;&#x5BF9;&#x8BFB;&#x5199;&#x7684;&#x63A7;&#x5236;&#x603B;&#x662F;&#x540C;&#x6B65;&#x7684;&#x3002;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x53EA;&#x8BFB;&#x6216;&#x8005;&#x53EA;&#x5199;&#x5462;&#xFF1F;</p>
+</blockquote>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+    <span class="hljs-comment">// &#x5C06;&#x53D8;&#x91CF;&#x8BBE;&#x4E3A;private&#xFF0C;&#x8FD9;&#x6837;&#x5916;&#x754C;&#x5373;&#x4E0D;&#x80FD;&#x8BFB;&#x53D6;&#x53D8;&#x91CF;&#x4E5F;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x53D8;&#x91CF;&#x3002;</span>
+    <span class="hljs-comment">// &#x90A3;&#x4E48;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x529F;&#x80FD;&#x5C31;&#x53EA;&#x5269;&#x4E0B;&#x4E86;&#x5355;&#x7EAF;&#x7684;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3002;</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gold;
+
+    <span class="hljs-comment">// public&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x80FD;&#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x6CD5;&#x3002;</span>
+    <span class="hljs-comment">// &#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x95F4;&#x63A5;&#x7684;&#x8BBF;&#x95EE;gold&#x53D8;&#x91CF;&#x3002;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">GetGold</span>(<span class="hljs-params"></span>)
+    </span>{
+        <span class="hljs-keyword">return</span> gold;
+    }
+
+    <span class="hljs-comment">// &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8BA9;&#x5916;&#x754C;&#x95F4;&#x63A5;&#x7684;&#x7ED9;gold&#x53D8;&#x91CF;&#x8D4B;&#x503C;</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetGold</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> <span class="hljs-keyword">value</span></span>)
+    </span>{
+        gold = <span class="hljs-keyword">value</span>;
+    }
+}
+<span class="hljs-comment">// &#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x5C06;&#x53D8;&#x91CF;&#x7684;&#x4E09;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3001;&#x8BFB;&#x6570;&#x636E;&#x3001;&#x5199;&#x6570;&#x636E;&#xFF0C;&#x90FD;&#x72EC;&#x7ACB;&#x51FA;&#x6765;&#x4E86;&#x3002;</span>
+<span class="hljs-comment">// &#x5982;&#x679C;&#x8981;&#x5B9E;&#x73B0;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x53D8;&#x91CF;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x53D8;&#x91CF;&#xFF0C;&#x628A;SetGold&#x51FD;&#x6570;&#x53BB;&#x6389;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+    </span>{
+        Hero lk = <span class="hljs-keyword">new</span> Hero();
+        <span class="hljs-comment">// lk.gold = 100; // ERROR:gold&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#x3002;</span>
+        lk.SetGold(<span class="hljs-number">100</span>); <span class="hljs-comment">// OK</span>
+
+        <span class="hljs-comment">// Console.WriteLine(lk.gold); // ERROR:gold&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4E0D;&#x80FD;&#x8BFB;&#x53D6;&#x3002;</span>
+        Console.WriteLine(lk.GetGold()); <span class="hljs-comment">// OK</span>
+    }
+}
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;">&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;</h2>
+<blockquote>
+<p>&#x4E0A;&#x4F8B;&#x4E2D;&#x7684;&#x4E2D;<code>GetGold</code>&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x8BFB;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;<code>SetGold</code>&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x5199;&#x8BBF;&#x95EE;&#x5668;&#x3002;
+&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x53D8;&#x91CF;<code>gold</code>&#x7684;&#x8BFB;&#x548C;&#x5199;&#x8FDB;&#x884C;&#x72EC;&#x7ACB;&#x7684;&#x63A7;&#x5236;&#x3002;</p>
 </blockquote>
 <ul>
-<li>C#&#x662F;&#x5F3A;&#x7C7B;&#x578B;&#x8BED;&#x8A00;&#x3002;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x90FD;&#x8981;&#x6709;&#x660E;&#x786E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
-<li>C#&#x4E2D;&#x6709;5&#x79CD;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</li>
+<li>C#&#x8BED;&#x8A00;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x66F4;&#x7B80;&#x5316;&#x7684;&#x8BED;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x3002;</li>
+<li><p>&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x548C;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#x3002;&#x5982;&#x679C;&#x662F;&#x5BF9;&#x5C5E;&#x6027;&#x8D4B;&#x503C;&#x5C31;&#x662F;&#x8C03;&#x7528;<code>set</code>&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x5C31;&#x662F;&#x8C03;&#x7528;<code>get</code>&#x8BBF;&#x95EE;&#x5668;&#x3002;</p>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gold;
+
+  <span class="hljs-comment">// &#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x540D;&#x5B57;&#x53EB;Gold&#x4E0E;&#x4E0A;&#x9762;&#x7684;&#x53D8;&#x91CF;gold&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x4E24;&#x4E2A;&#x540D;&#x5B57;&#x3002;</span>
+  <span class="hljs-comment">// &#x4ED6;&#x4EEC;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x4E5F;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x5173;&#x7CFB;&#x3002;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Gold
+  {
+      <span class="hljs-keyword">get</span> <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x8BFB;&#x8BBF;&#x95EE;&#x5668;</span>
+      {
+          <span class="hljs-comment">// &#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x548C;&#x4E0A;&#x4F8B;&#x4E2D;GetGold&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x6837;</span>
+          <span class="hljs-keyword">return</span> gold;
+      }
+      <span class="hljs-keyword">set</span> <span class="hljs-comment">// &#x5B9A;&#x4E49;&#x5199;&#x8BBF;&#x95EE;&#x5668;</span>
+      {
+          <span class="hljs-comment">// &#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x548C;&#x4E0A;&#x4F8B;&#x4E2D;SetGold&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x6837;</span>
+          <span class="hljs-comment">// value&#x662F;&#x4E00;&#x4E2A;C#&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;SetGold&#x7684;&#x53C2;&#x6570;&#x3002;</span>
+          gold = <span class="hljs-keyword">value</span>;
+      }
+  }
+}
+<span class="hljs-keyword">class</span> <span class="hljs-title">Program</span>
+{
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"></span>)
+  </span>{
+      Hero lk = <span class="hljs-keyword">new</span> Hero();
+      lk.Gold = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x8C03;&#x7528;Gold&#x7684;set&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x8FD9;&#x65F6;&#x4F1A;&#x628A;100&#x8D4B;&#x503C;&#x7ED9;set&#x8BBF;&#x95EE;&#x5668;&#x4E2D;&#x7684;value&#x3002;</span>
+      Console.WriteLine(lk.Gold); <span class="hljs-comment">// &#x8C03;&#x7528;Gold&#x7684;get&#x8BBF;&#x95EE;&#x5668;&#x3002;</span>
+  }
+}
+</code></pre>
+</li>
+<li><p>&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x7C7B;&#x578B;&#x8BF4;&#x660E;&#x4E86;&#xFF0C;<code>get</code>&#x8BBF;&#x95EE;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;<code>set</code>&#x8BBF;&#x95EE;&#x5668;&#x4E2D;<code>value</code>&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+</li>
+<li>&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x7684;&#x672C;&#x8D28;&#x5C31;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x4EC5;&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x95F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF0C;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x662F;&#x7531;&#x53D8;&#x91CF;&#x5B8C;&#x6210;&#x7684;&#x3002;</li>
+<li><p>&#x53EF;&#x4EE5;&#x53EA;&#x5B9A;&#x4E49;&#x8BFB;&#x8BBF;&#x95EE;&#x5668;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x53EA;&#x5B9A;&#x4E49;&#x5199;&#x8BBF;&#x95EE;&#x5668;&#x3002;</p>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gold;
+  <span class="hljs-comment">// &#x53EA;&#x8BFB;&#x7684;&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Gold
+  {
+      <span class="hljs-keyword">get</span>
+      {
+          <span class="hljs-keyword">return</span> gold;
+      }
+  }
+}
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x63D0;&#x4F9B;&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x76F4;&#x63A5;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x8FDE;&#x53D8;&#x91CF;&#x7684;&#x7533;&#x660E;&#x90FD;&#x7B80;&#x5316;&#x6389;&#x3002;</p>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+  <span class="hljs-comment">// &#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x5C5E;&#x6027;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Level { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+  <span class="hljs-comment">// &#x53EA;&#x8BFB;&#x5C5E;&#x6027;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Gold { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">private</span> <span class="hljs-keyword">set</span>; }
+}
+</code></pre>
+</li>
+<li>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53EA;&#x662F;&#x4E00;&#x79CD;&#x7B80;&#x5199;&#x3002;&#x6570;&#x636E;&#x8FD8;&#x662F;&#x5B58;&#x50A8;&#x5728;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7531;&#x7F16;&#x8BD1;&#x5668;&#x5077;&#x5077;&#x7684;&#x5E2E;&#x6211;</li>
+<li>&#x4EEC;&#x7533;&#x660E;&#x3002;</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>&#x6570;&#x636E;</th>
-<th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
-<th>&#x6570;&#x636E;&#x7684;&#x8868;&#x793A;</th>
-<th>C#&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#x674E;&#x5EB7;</td>
-<td>&#x5B57;&#x7B26;&#x4E32;</td>
-<td>&#x201C;&#x674E;&#x5EB7;&#x201D;</td>
-<td>string</td>
-</tr>
-<tr>
-<td>N</td>
-<td>&#x5B57;&#x7B26;</td>
-<td>&#x2018;N&#x2019;</td>
-<td>char</td>
-</tr>
-<tr>
-<td>18</td>
-<td>&#x6574;&#x6570;</td>
-<td>18</td>
-<td>int</td>
-</tr>
-<tr>
-<td>1.81</td>
-<td>&#x5C0F;&#x6570;&#xFF0C;&#x6D6E;&#x70B9;&#x6570;</td>
-<td>1.81</td>
-<td>double</td>
-</tr>
-<tr>
-<td>&#x662F;</td>
-<td>&#x5E03;&#x5C14;</td>
-<td>true false</td>
-<td>bool</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x6570;&#x636E;&#x7684;&#x57FA;&#x672C;&#x8FD0;&#x7B97;">&#x6570;&#x636E;&#x7684;&#x57FA;&#x672C;&#x8FD0;&#x7B97;</h2>
+<h2 id="&#x5C5E;&#x6027;&#x7684;&#x4F7F;&#x7528;">&#x5C5E;&#x6027;&#x7684;&#x4F7F;&#x7528;</h2>
 <ul>
-<li><p>&#x6570;&#x5B57;&#x95F4;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7B97;&#x6570;&#x8FD0;&#x7B97;&#x3002;</p>
-<pre><code class="lang-CS">Console.WriteLine(<span class="hljs-number">1</span> + <span class="hljs-number">2</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;3</span>
-Console.WriteLine(<span class="hljs-number">2</span> * <span class="hljs-number">3</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;6</span>
-Console.WriteLine(<span class="hljs-number">2</span> - <span class="hljs-number">3.2</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;-1.2</span>
-Console.WriteLine(<span class="hljs-number">10.0</span> / <span class="hljs-number">2</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;5</span>
+<li>&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5BF9;&#x53D8;&#x91CF;&#x53EA;&#x8BFB;&#x3001;&#x53EA;&#x5199;&#x6216;&#x8005;&#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x7684;&#x8BBF;&#x95EE;&#x3002;</li>
+<li><p>&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x505A;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x3002;</p>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span>
+{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> id;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> pwd;
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> gold;
+  <span class="hljs-comment">// &#x53EA;&#x8BFB;&#x5C5E;&#x6027;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Gold 
+  { 
+      <span class="hljs-keyword">get</span>
+      {
+          <span class="hljs-comment">// &#x8BFB;&#x8BBF;&#x95EE;&#x63A7;&#x5236;:&#x53EA;&#x6709;&#x9A8C;&#x8BC1;&#x901A;&#x8FC7;&#x4E86;&#x624D;&#x80FD;&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x3002;</span>
+          <span class="hljs-keyword">if</span> (id == <span class="hljs-string">&quot;likang&quot;</span> &amp;&amp; pwd ==<span class="hljs-string">&quot;password&quot;</span>)
+              <span class="hljs-keyword">return</span> gold;
+
+          <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+      }
+      <span class="hljs-keyword">set</span>
+      {
+          <span class="hljs-comment">// &#x5199;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#xFF1A;&#x786E;&#x5B9A;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x662F;&#x6709;&#x6548;&#x7684;&#x3002;</span>
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">value</span> &gt;= <span class="hljs-number">0</span>)
+              gold = <span class="hljs-keyword">value</span>;
+      }
+}
 </code></pre>
 </li>
-<li><p>&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x7528;+&#x8FDE;&#x63A5;&#x3002;</p>
-<pre><code class="lang-CS">Console.WriteLine(<span class="hljs-string">&quot;Li&quot;</span> + <span class="hljs-string">&quot;Kang&quot;</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;LiKang</span>
-Console.WriteLine(<span class="hljs-string">&quot;1&quot;</span> + <span class="hljs-string">&quot;2&quot;</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;12</span>
+<li><p>&#x5C5E;&#x6027;&#x8BBF;&#x95EE;&#x5668;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x8981;&#x8BFB;&#x5199;&#x67D0;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-CS"><span class="hljs-keyword">class</span> <span class="hljs-title">Example</span>
+{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span>[] data = {<span class="hljs-number">11</span>, <span class="hljs-number">32</span>, <span class="hljs-number">12</span>, <span class="hljs-number">51</span>, <span class="hljs-number">62</span>, <span class="hljs-number">21</span>, <span class="hljs-number">9</span>, <span class="hljs-number">13</span>};
+
+  <span class="hljs-comment">// &#x83B7;&#x53D6;&#x6700;&#x5C0F;&#x6570;&#x636E;</span>
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> Min
+  {
+      <span class="hljs-keyword">get</span>
+      {
+          <span class="hljs-keyword">int</span> min = data[<span class="hljs-number">0</span>];
+          <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;data.Length; i++)
+          {
+              <span class="hljs-keyword">if</span> (data[i] &lt; min)
+                  min = data[i];
+          }
+          <span class="hljs-keyword">return</span> min;
+      }
+  }
+}
 </code></pre>
 </li>
-<li><p>&#x5176;&#x4ED6;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0E;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4EE5;&#x7528;+&#x8FDE;&#x63A5;</p>
-<pre><code class="lang-CS">Console.WriteLine(<span class="hljs-string">&quot;LiKang have &quot;</span> + <span class="hljs-number">3</span> + <span class="hljs-string">&quot; Books&quot;</span>); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;LiKang have 3 Books;</span>
-</code></pre>
-</li>
-</ul>
-<h2 id="&#x6570;&#x636E;&#x7684;&#x672C;&#x8D28;">&#x6570;&#x636E;&#x7684;&#x672C;&#x8D28;</h2>
-<ul>
-<li>&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x90FD;&#x662F;&#x7531;0&#x3001;1&#x7EC4;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x3002;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x3001;&#x4E00;&#x4EFD;&#x6587;&#x4EF6;&#x3001;&#x4E00;&#x90E8;&#x7535;&#x5F71;&#xFF0C;&#x4EE5;&#x53CA;&#x521A;&#x521A;&#x63D0;&#x5230;&#x7684;&#x6574;&#x6570;&#x3001;&#x6D6E;&#x70B9;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x5E03;&#x5C14;&#x7B49;&#xFF0C;&#x90FD;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x3002;</li>
 </ul>
 
                     
@@ -851,10 +957,10 @@ Console.WriteLine(<span class="hljs-string">&quot;1&quot;</span> + <span class="
         </div>
 
         
-        <a href="../cs_base.html" class="navigation navigation-prev " aria-label="Previous page: C#入门"><i class="fa fa-angle-left"></i></a>
+        <a href="../OOP/static.html" class="navigation navigation-prev " aria-label="Previous page: 类成员与实例成员"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Data/veriable.html" class="navigation navigation-next " aria-label="Next page: 变量"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>类成员与实例成员 | C# Source Book</title>
+        <title>继承 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../OOP/property.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../OOP/class.html" />
+    <link rel="prev" href="../OOP/property.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="6.2"
-        data-chapter-title="类成员与实例成员"
-        data-filepath="OOP/static.md"
+        data-level="6.4"
+        data-chapter-title="继承"
+        data-filepath="OOP/inherit.md"
         data-basepath=".."
         data-revision="Mon Apr 11 2016 17:03:07 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -465,7 +465,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="OOP/static.html">
+        <li class="chapter " data-level="6.2" data-path="OOP/static.html">
             
                 
                     <a href="../OOP/static.html">
@@ -495,7 +495,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="OOP/inherit.html">
+        <li class="chapter active" data-level="6.4" data-path="OOP/inherit.html">
             
                 
                     <a href="../OOP/inherit.html">
@@ -788,33 +788,25 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;">&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;</h1>
-<h2 id="&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;">&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x4E0E;&#x7C7B;&#x6210;&#x5458;</h2>
+                        <h1 id="&#x7EE7;&#x627F;">&#x7EE7;&#x627F;</h1>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;">&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;</h2>
 <ul>
-<li>&#x6210;&#x5458;&#x6307;&#x7684;&#x662F;&#x7C7B;&#x4E2D;&#x5C01;&#x88C5;&#x7684;&#x53D8;&#x91CF;&#x3001;&#x51FD;&#x6570;&#x7B49;&#x3002;</li>
-<li>&#x5B9E;&#x4F8B;&#x6210;&#x5458;&#x662F;&#x5C5E;&#x4E8E;&#x67D0;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#xFF0C;&#x7528;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
-<li>&#x7C7B;&#x6210;&#x5458;&#x662F;&#x5C5E;&#x4E8E;&#x6574;&#x4E2A;&#x7C7B;&#x7684;&#xFF0C;&#x7528;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;&#x7C7B;&#x6210;&#x5458;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x4F8B;&#x5316;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
+<li>A&#x7C7B;&#x7EE7;&#x627F;&#x4E86;B&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;A&#x662F;B&#x7684;&#x5B50;&#x7C7B;&#xFF0C;B&#x662F;A&#x7684;&#x7236;&#x7C7B;&#x3002;</li>
+<li>&#x7EE7;&#x627F;&#x540E;&#x5B50;&#x7C7B;&#x62E5;&#x4F1A;&#x6709;&#x7236;&#x7C7B;&#x7684;&#x4E00;&#x5207;&#xFF08;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x4E8B;&#x4EF6;&#x7B49;&#xFF09;&#x3002;</li>
+<li>&#x7EE7;&#x627F;&#x5B9E;&#x73B0;&#x4E86;&#x66F4;&#x5927;&#x89C4;&#x6A21;&#xFF08;&#x7C7B;&#x7EA7;&#x522B;&#xFF09;&#x7684;&#x4EE3;&#x7801;&#x590D;&#x7528;&#x3002;
+```CS</li>
 </ul>
-<h2 id="&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x4E0E;&#x7C7B;&#x5E38;&#x91CF;">&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x4E0E;&#x7C7B;&#x5E38;&#x91CF;</h2>
+<p>```</p>
 <ul>
-<li><code>const</code>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x7C7B;&#x5E38;&#x91CF;&#x3002;</li>
-<li><code>readonly</code>&#x7528;&#x6765;&#x5B9A;&#x4E49;&#x5B9E;&#x4F8B;&#x5E38;&#x91CF;&#x3002;</li>
-<li><code>const</code>&#x5E38;&#x91CF;&#x53EA;&#x80FD;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x53EF;&#x4EE5;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E2D;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
-<li><code>const</code>&#x5E38;&#x91CF;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
-<li><code>const</code>&#x5E38;&#x91CF;&#x5728;&#x6574;&#x4E2A;&#x7C7B;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x7BA1;&#x8FD9;&#x4E2A;&#x7C7B;&#x6709;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x90FD;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF1B;<code>readonly</code>&#x5E38;&#x91CF;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x4E00;&#x4EFD;&#x72EC;&#x7ACB;&#x6709;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#xFF1F; A&#x662F;B&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x3002;class A : B{}</li>
+<li>&#x5B50;&#x7C7B;&#x4E00;&#x5B9A;&#x662F;&#x7236;&#x7C7B;&#xFF0C; &#x7236;&#x7C7B;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x5B50;&#x7C7B;&#x3002;</li>
+<li>&#x5B50;&#x7C7B;&#x5360;&#x7684;&#x5185;&#x5B58;&#x5927;&#x3002;</li>
 </ul>
-<h2 id="&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;">&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x4E0E;&#x7C7B;&#x53D8;&#x91CF;</h2>
-<ul>
-<li>&#x4E0D;&#x52A0;<code>static</code>&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF1B;&#x52A0;<code>static</code>&#x7684;&#x53D8;&#x91CF;&#x5C31;&#x662F;&#x7C7B;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x53EB;&#x9759;&#x6001;&#x53D8;&#x91CF;&#x3002;</li>
-<li>&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;&#x7C7B;&#x53D8;&#x91CF;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
-<li>&#x7C7B;&#x53D8;&#x91CF;&#x5728;&#x6574;&#x4E2A;&#x7C7B;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x7BA1;&#x8FD9;&#x4E2A;&#x7C7B;&#x6709;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#xFF0C;&#x90FD;&#x6709;&#x4E14;&#x53EA;&#x6709;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF1B;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x90FD;&#x6709;&#x4E00;&#x4EFD;&#x72EC;&#x7ACB;&#x6709;&#x6570;&#x636E;&#x3002;</li>
-</ul>
-<h2 id="&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x4E0E;&#x7C7B;&#x65B9;&#x6CD5;">&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x4E0E;&#x7C7B;&#x65B9;&#x6CD5;</h2>
-<ul>
-<li>&#x4E0D;&#x52A0;<code>static</code>&#x7684;&#x51FD;&#x6570;&#x5C31;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;&#x52A0;<code>static</code>&#x7684;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EB;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x3002;</li>
-<li>&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x540D;&#x8BBF;&#x95EE;&#xFF1B;&#x7C7B;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x7C7B;&#x540D;&#x8BBF;&#x95EE;&#x3002;</li>
-<li>&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x8BBF;&#x95EE;&#x975E;&#x9759;&#x6001;&#x6210;&#x5458;&#x3002;</li>
-</ul>
+<h2 id="&#x8BBF;&#x95EE;&#x63A7;&#x5236;">&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h2>
+<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x5173;&#x7CFB;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x5173;&#x7CFB;</h2>
+<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x8FC7;&#x7A0B;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x8FC7;&#x7A0B;</h2>
+<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x95F4;&#x7684;&#x8F6C;&#x5316;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x95F4;&#x7684;&#x8F6C;&#x5316;</h2>
+<h2 id="&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;">&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;</h2>
 
                     
                     </section>
@@ -825,10 +817,10 @@
         </div>
 
         
-        <a href="../OOP/class.html" class="navigation navigation-prev " aria-label="Previous page: 封装"><i class="fa fa-angle-left"></i></a>
+        <a href="../OOP/property.html" class="navigation navigation-prev " aria-label="Previous page: 属性"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../OOP/property.html" class="navigation navigation-next " aria-label="Next page: 属性"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

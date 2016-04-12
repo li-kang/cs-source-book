@@ -53,7 +53,7 @@
         data-chapter-title="接口"
         data-filepath="OOP/interface.md"
         data-basepath=".."
-        data-revision="Tue Apr 12 2016 22:48:31 GMT+0800 (中国标准时间)"
+        data-revision="Tue Apr 12 2016 22:58:16 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -910,18 +910,18 @@ class Electronic
 class Light : Electronic, ISwitch // &#x7C7B;&#x4E0E;&#x63A5;&#x53E3;&#x4E4B;&#x95F4;&#x7528;,&#x5206;&#x5F00;
 {
   // &#x4EAE;&#x5EA6;
-  public int Power{ get; set;}
+  public int Brightness { get; set;}
 
   // &#x8FD9;&#x91CC;&#x5B9E;&#x73B0;&#x4E86;&#x63A5;&#x53E3;&#x4E2D;&#x7684;Open&#x65B9;&#x6CD5;
   public void Open()
   {
-      Power = 10;
+      Brightness = 10;
   }
 
   // &#x8FD9;&#x91CC;&#x5B9E;&#x73B0;&#x4E86;&#x63A5;&#x53E3;&#x4E2D;&#x7684;Close&#x65B9;&#x6CD5;
   public void Close()
   {
-      Power = 0;
+      Brightness = 0;
   }
 }
 </code></pre>
@@ -942,7 +942,9 @@ s.Open(); <span class="hljs-comment">// OK: ISwitch&#x4E2D;&#x6709;Open&#x65B9;&
 <ul>
 <li>&#x4E00;&#x4E2A;&#x7C7B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x7C7B;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</li>
 <li>&#x591A;&#x63A5;&#x53E3;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x540C;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x3002;</li>
-<li>&#x663E;&#x5F0F;&#x73B0;&#x5B9E;&#x591A;&#x63A5;&#x53E3;&#x3002;<pre><code class="lang-CS">// &#x5B9A;&#x4E49;&#x63A5;&#x53E3;IA
+<li>&#x663E;&#x5F0F;&#x73B0;&#x5B9E;&#x591A;&#x63A5;&#x53E3;&#x3002;
+```CS
+// &#x5B9A;&#x4E49;&#x63A5;&#x53E3;IA
 interface IA
 {
   void Fun();
@@ -953,92 +955,89 @@ interface IB
 {
   void Fun();
   void FunB();
-}
-// MyClass&#x5B9E;&#x73B0;&#x4E86;&#x591A;&#x4E2A;&#x63A5;&#x53E3;
-class MyClass : IA, IB
+}</li>
+</ul>
+<p>// MyClass&#x5B9E;&#x73B0;&#x4E86;&#x591A;&#x4E2A;&#x63A5;&#x53E3;
+class MyClass : IA, IB // &#x63A5;&#x53E3;&#x4E4B;&#x95F4;&#x7528;,&#x5206;&#x5F00;
 {
-  // &#x540C;&#x65F6;&#x5B9E;&#x73B0;IA&#x548C;IB&#x4E2D;Fun&#x51FD;&#x6570;
-  public void Fun()
-  {
-      Console.WriteLine(&quot;Fun&quot;);
-  }
-  public void FunA()
-  {
-      Console.WriteLine(&quot;FunA&quot;);
-  }
-  public void FunB()
-  {
-      Console.WriteLine(&quot;FunB&quot;);
-  }
+    // &#x540C;&#x65F6;&#x5B9E;&#x73B0;IA&#x548C;IB&#x4E2D;Fun&#x51FD;&#x6570;
+    public void Fun()
+    {
+        Console.WriteLine(&quot;Fun&quot;);
+    }
+    public void FunA()
+    {
+        Console.WriteLine(&quot;FunA&quot;);
+    }
+    public void FunB()
+    {
+        Console.WriteLine(&quot;FunB&quot;);
+    }
 }
 class Program
 {
-  public static void Main()
-  {
-      MyClass mc = new MyClass();
-      IA a = mc;
-      IB b = mc;
-      a.Fun(); // &#x8F93;&#x51FA;&#xFF1A;Fun
-      b.Fun(); // &#x8F93;&#x51FA;&#xFF1A;Fun
-  }
-}
-</code></pre>
-</li>
-</ul>
-<h2 id="&#x663E;&#x793A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;">&#x663E;&#x793A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;</h2>
-<ul>
-<li>&#x4E0A;&#x4F8B;&#x4E2D;<code>MyClass</code>&#x4E2D;&#x7684;<code>Fun</code>&#x51FD;&#x6570;&#xFF0C;&#x540C;&#x65F6;&#x5B9E;&#x73B0;<code>IA</code>&#x548C;<code>IB</code>&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x8981;&#x6C42;&#x3002;</li>
-<li>&#x5982;&#x679C;&#x5E0C;&#x671B;<code>IA</code>&#x548C;<code>IB</code>&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#x7684;<code>Fun</code>&#x51FD;&#x6570;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;<pre><code class="lang-CS">// &#x5B9A;&#x4E49;&#x63A5;&#x53E3;IA
+    public static void Main()
+    {
+        MyClass mc = new MyClass();
+        IA a = mc;
+        IB b = mc;
+        a.Fun(); // &#x8F93;&#x51FA;&#xFF1A;Fun
+        b.Fun(); // &#x8F93;&#x51FA;&#xFF1A;Fun
+    }
+}</p>
+<pre><code>
+## &#x663E;&#x793A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;
+- &#x4E0A;&#x4F8B;&#x4E2D;`MyClass`&#x4E2D;&#x7684;`Fun`&#x51FD;&#x6570;&#xFF0C;&#x540C;&#x65F6;&#x5B9E;&#x73B0;`IA`&#x548C;`IB`&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x8981;&#x6C42;&#x3002;
+- &#x5982;&#x679C;&#x5E0C;&#x671B;`IA`&#x548C;`IB`&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#x7684;`Fun`&#x51FD;&#x6570;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x65B9;&#x6CD5;&#x3002;
+```CS
+// &#x5B9A;&#x4E49;&#x63A5;&#x53E3;IA
 interface IA
 {
-  void Fun();
-  void FunA();
+    void Fun();
+    void FunA();
 }
 // &#x5B9A;&#x4E49;&#x63A5;&#x53E3;IB&#x3002;IA&#x3001;IB&#x4E2D;&#x90FD;&#x5B9A;&#x4E49;&#x4E86;&#x51FD;&#x6570;Fun&#x3002;
 interface IB
 {
-  void Fun();
-  void FunB();
+    void Fun();
+    void FunB();
 }
 // MyClass&#x5B9E;&#x73B0;&#x4E86;&#x591A;&#x4E2A;&#x63A5;&#x53E3;
 class MyClass : IA, IB
 {
-  // &#x5B9E;&#x73B0;&#x4E86;IA&#x4E2D;&#x7684;Fun&#x51FD;&#x6570;
-  public void IA.Fun()
-  {
-      Console.WriteLine(&quot;IA.Fun&quot;);
-  }
-  // &#x5B9E;&#x73B0;&#x4E86;IB&#x4E2D;&#x7684;Fun&#x51FD;&#x6570;
-  public void IB.Fun()
-  {
-      Console.WriteLine(&quot;IA.Fun&quot;);
-  }
-  public void FunA()
-  {
-      Console.WriteLine(&quot;FunA&quot;);
-  }
-  public void FunB()
-  {
-      Console.WriteLine(&quot;FunB&quot;);
-  }
+    // &#x5B9E;&#x73B0;&#x4E86;IA&#x4E2D;&#x7684;Fun&#x51FD;&#x6570;
+    public void IA.Fun()
+    {
+        Console.WriteLine(&quot;IA.Fun&quot;);
+    }
+    // &#x5B9E;&#x73B0;&#x4E86;IB&#x4E2D;&#x7684;Fun&#x51FD;&#x6570;
+    public void IB.Fun()
+    {
+        Console.WriteLine(&quot;IA.Fun&quot;);
+    }
+    public void FunA()
+    {
+        Console.WriteLine(&quot;FunA&quot;);
+    }
+    public void FunB()
+    {
+        Console.WriteLine(&quot;FunB&quot;);
+    }
 }
 class Program
 {
-  public static void Main()
-  {
-      MyClass mc = new MyClass();
-      IA a = mc;
-      IB b = mc;
-      a.Fun(); // &#x8F93;&#x51FA;&#xFF1A;IA.Fun
-      b.Fun(); // &#x8F93;&#x51FA;&#xFF1A;IB.Fun
-  }
+    public static void Main()
+    {
+        MyClass mc = new MyClass();
+        IA a = mc;
+        IB b = mc;
+        a.Fun(); // &#x8F93;&#x51FA;&#xFF1A;IA.Fun
+        b.Fun(); // &#x8F93;&#x51FA;&#xFF1A;IB.Fun
+    }
 }
-</code></pre>
-</li>
-</ul>
-<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+</code></pre><h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <ul>
-<li>&#x63A5;&#x53E3;&#x7684;&#x7528;&#x6CD5;&#x6709;&#x4E24;&#x4E2A;&#xFF1A;&#x7ED9;&#x7C7B;&#x53BB;&#x5B9E;&#x73B0;&#xFF1B;&#x505A;&#x4E3A;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x63A5;&#x53E3;&#x7684;&#x7528;&#x6CD5;&#x6709;&#x4E24;&#x4E2A;&#xFF1A;&#x8BA9;&#x7C7B;&#x53BB;&#x5B9E;&#x73B0;&#xFF1B;&#x505A;&#x4E3A;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
 </ul>
 
                     

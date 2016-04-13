@@ -37,7 +37,7 @@
         
     
     
-    <link rel="next" href="../OOP/interface.html" />
+    <link rel="next" href="../OOP/base.html" />
     
     
     <link rel="prev" href="../OOP/property.html" />
@@ -53,7 +53,7 @@
         data-chapter-title="继承"
         data-filepath="OOP/inherit.md"
         data-basepath=".."
-        data-revision="Tue Apr 12 2016 22:58:16 GMT+0800 (中国标准时间)"
+        data-revision="Wed Apr 13 2016 23:44:22 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -510,21 +510,44 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" >
+        <li class="chapter " data-level="6.5" data-path="OOP/base.html">
             
-            <span><b>6.5.</b> 多态</span>
+                
+                    <a href="../OOP/base.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        父类与子类
+                    </a>
             
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="OOP/interface.html">
+        <li class="chapter " data-level="6.6" data-path="OOP/polymorphism.html">
+            
+                
+                    <a href="../OOP/polymorphism.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        多态
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="OOP/interface.html">
             
                 
                     <a href="../OOP/interface.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>6.6.</b>
+                            <b>6.7.</b>
                         
                         接口
                     </a>
@@ -532,9 +555,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.7" >
+        <li class="chapter " data-level="6.8" >
             
-            <span><b>6.7.</b> 委托与事件</span>
+            <span><b>6.8.</b> 委托与事件</span>
             
             
         </li>
@@ -802,19 +825,14 @@
 <li>A&#x7C7B;&#x7EE7;&#x627F;&#x4E86;B&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;A&#x662F;B&#x7684;&#x5B50;&#x7C7B;&#xFF0C;B&#x662F;A&#x7684;&#x7236;&#x7C7B;&#x3002;</li>
 <li>&#x7EE7;&#x627F;&#x540E;&#x5B50;&#x7C7B;&#x62E5;&#x4F1A;&#x6709;&#x7236;&#x7C7B;&#x7684;&#x4E00;&#x5207;&#xFF08;&#x5C5E;&#x6027;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x4E8B;&#x4EF6;&#x7B49;&#xFF09;&#x3002;</li>
 <li>&#x7EE7;&#x627F;&#x5B9E;&#x73B0;&#x4E86;&#x66F4;&#x5927;&#x89C4;&#x6A21;&#xFF08;&#x7C7B;&#x7EA7;&#x522B;&#xFF09;&#x7684;&#x4EE3;&#x7801;&#x590D;&#x7528;&#x3002;
-```CS</li>
+<code>CS</code></li>
 </ul>
-<p>```</p>
 <ul>
 <li>&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#xFF1F; A&#x662F;B&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x3002;class A : B{}</li>
 <li>&#x5B50;&#x7C7B;&#x4E00;&#x5B9A;&#x662F;&#x7236;&#x7C7B;&#xFF0C; &#x7236;&#x7C7B;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x5B50;&#x7C7B;&#x3002;</li>
 <li>&#x5B50;&#x7C7B;&#x5360;&#x7684;&#x5185;&#x5B58;&#x5927;&#x3002;</li>
 </ul>
 <h2 id="&#x8BBF;&#x95EE;&#x63A7;&#x5236;">&#x8BBF;&#x95EE;&#x63A7;&#x5236;</h2>
-<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x5173;&#x7CFB;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x5173;&#x7CFB;</h2>
-<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x8FC7;&#x7A0B;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x8FC7;&#x7A0B;</h2>
-<h2 id="&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x95F4;&#x7684;&#x8F6C;&#x5316;">&#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x95F4;&#x7684;&#x8F6C;&#x5316;</h2>
-<h2 id="&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;">&#x6210;&#x5458;&#x7684;&#x8BBF;&#x95EE;</h2>
 
                     
                     </section>
@@ -828,7 +846,7 @@
         <a href="../OOP/property.html" class="navigation navigation-prev " aria-label="Previous page: 属性"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../OOP/interface.html" class="navigation navigation-next " aria-label="Next page: 接口"><i class="fa fa-angle-right"></i></a>
+        <a href="../OOP/base.html" class="navigation navigation-next " aria-label="Next page: 父类与子类"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>运算 | C# Source Book</title>
+        <title>事件 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Compute/assign.html" />
+    <link rel="next" href="../Projects/cards.html" />
     
     
-    <link rel="prev" href="../Data/array.html" />
+    <link rel="prev" href="../OOP/delegate.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="3"
-        data-chapter-title="运算"
-        data-filepath="Compute/compute.md"
+        data-level="6.9"
+        data-chapter-title="事件"
+        data-filepath="OOP/event.md"
         data-basepath=".."
         data-revision="Thu Apr 14 2016 23:20:37 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -193,7 +193,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3" data-path="Compute/compute.html">
+        <li class="chapter " data-level="3" data-path="Compute/compute.html">
             
                 
                     <a href="../Compute/compute.html">
@@ -570,7 +570,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.9" data-path="OOP/event.html">
+        <li class="chapter active" data-level="6.9" data-path="OOP/event.html">
             
                 
                     <a href="../OOP/event.html">
@@ -870,26 +870,18 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x8FD0;&#x7B97;">&#x8FD0;&#x7B97;</h1>
-<h2 id="&#x8FD0;&#x7B97;&#x7684;&#x610F;&#x4E49;">&#x8FD0;&#x7B97;&#x7684;&#x610F;&#x4E49;</h2>
+                        <h1 id="&#x4E8B;&#x4EF6;">&#x4E8B;&#x4EF6;</h1>
+<h2 id="&#x4E8B;&#x4EF6;&#x7684;&#x5B9A;&#x4E49;">&#x4E8B;&#x4EF6;&#x7684;&#x5B9A;&#x4E49;</h2>
 <ul>
-<li>&#x7F16;&#x7A0B;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;<code>&#x884C;&#x4E3A;</code>&#x90FD;&#x53EF;&#x4EE5;&#x7528;<code>&#x591A;&#x4E2A;&#x8FD0;&#x7B97;</code>&#x6765;&#x8868;&#x793A;&#x3002;</li>
+<li>&#x4E8B;&#x4EF6;&#x5728;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x59D4;&#x6258;&#x53D8;&#x91CF;&#x524D;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;<code>event</code>&#x5173;&#x952E;&#x5B57;&#x3002;</li>
 </ul>
-<pre><code class="lang-CS"><span class="hljs-comment">// &#x8717;&#x725B;&#x5F80;&#x4E0A;&#x722C;&#x4E86;3&#x7C73;</span>
-<span class="hljs-keyword">int</span> position = <span class="hljs-number">0</span>; <span class="hljs-comment">// position&#x8868;&#x793A;&#x8717;&#x725B;&#x5F53;&#x524D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</span>
-position = position + <span class="hljs-number">3</span>; <span class="hljs-comment">// &#x8717;&#x725B;&#x5F80;&#x4E0A;&#x722C;&#x4E86;3&#x7C73;</span>
-</code></pre>
-<pre><code class="lang-CS"><span class="hljs-comment">// &#x653B;&#x51FB;</span>
-<span class="hljs-keyword">int</span> mp = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x73A9;&#x5BB6;&#x5F53;&#x524D;&#x7684;&#x9B54;&#x6CD5;&#x503C;&#x3002;</span>
-<span class="hljs-keyword">int</span> monsterHp = <span class="hljs-number">100</span>; <span class="hljs-comment">// &#x602A;&#x7269;&#x5F53;&#x524D;&#x7684;&#x8840;&#x91CF;</span>
-
-mp = mp - <span class="hljs-number">30</span>; <span class="hljs-comment">// &#x653B;&#x51FB;&#x65F6;&#x7528;&#x6389;&#x4E86;30&#x7684;MP</span>
-monsterHp = monsterHp - <span class="hljs-number">50</span>; <span class="hljs-comment">// &#x6253;&#x6389;&#x4E86;&#x602A;&#x7269;50&#x70B9;&#x8840;</span>
-</code></pre>
-<h2 id="&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;">&#x8FD0;&#x7B97;&#x7B26;&#x4F18;&#x5148;&#x7EA7;</h2>
+<h2 id="&#x4E8B;&#x4EF6;&#x7684;&#x4F7F;&#x7528;">&#x4E8B;&#x4EF6;&#x7684;&#x4F7F;&#x7528;</h2>
 <ul>
-<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>()</code>&#x63A7;&#x5236;&#x8FD0;&#x7B97;&#x7684;&#x987A;&#x5E8F;&#x3002;</li>
+<li>&#x7ED9;&#x4E8B;&#x4EF6;&#x8D4B;&#x503C;&#x8981;&#x4F7F;&#x7528;<code>+=</code>&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x7528;<code>+=</code>&#x7ED9;&#x4E8B;&#x4EF6;&#x8D4B;&#x591A;&#x4E2A;&#x503C;&#xFF0C;&#x8FD9;&#x6837;&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;
+<code>CS</code></li>
 </ul>
+<h2 id="&#x4E8B;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;">&#x4E8B;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h2>
 
                     
                     </section>
@@ -900,10 +892,10 @@ monsterHp = monsterHp - <span class="hljs-number">50</span>; <span class="hljs-c
         </div>
 
         
-        <a href="../Data/array.html" class="navigation navigation-prev " aria-label="Previous page: 数组"><i class="fa fa-angle-left"></i></a>
+        <a href="../OOP/delegate.html" class="navigation navigation-prev " aria-label="Previous page: 委托"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Compute/assign.html" class="navigation navigation-next " aria-label="Next page: 赋值运算"><i class="fa fa-angle-right"></i></a>
+        <a href="../Projects/cards.html" class="navigation navigation-next " aria-label="Next page: 扑克牌"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

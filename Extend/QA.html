@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>常量 | C# Source Book</title>
+        <title>初学者常见问题 | C# Source Book</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Data/enum.html" />
+    <link rel="next" href="../ref.html" />
     
     
-    <link rel="prev" href="../Data/veriable.html" />
+    <link rel="prev" href="../Extend/grammar.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="2.2"
-        data-chapter-title="常量"
-        data-filepath="Data/const.md"
+        data-level="10.11"
+        data-chapter-title="初学者常见问题"
+        data-filepath="Extend/QA.md"
         data-basepath=".."
         data-revision="Sat Apr 16 2016 00:37:52 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -128,7 +128,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="Data/const.html">
+        <li class="chapter " data-level="2.2" data-path="Data/const.html">
             
                 
                     <a href="../Data/const.html">
@@ -832,7 +832,7 @@
             
         </li>
     
-        <li class="chapter " data-level="10.11" data-path="Extend/QA.html">
+        <li class="chapter active" data-level="10.11" data-path="Extend/QA.html">
             
                 
                     <a href="../Extend/QA.html">
@@ -900,17 +900,46 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</h1>
+                        <h1 id="&#x521D;&#x5B66;&#x8005;&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x521D;&#x5B66;&#x8005;&#x5E38;&#x89C1;&#x95EE;&#x9898;</h1>
 <ul>
-<li>&#x5E38;&#x91CF;&#x4E00;&#x4E2A;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x7684;&#x6570;&#x636E;&#x3002;</li>
-<li>&#x5728;&#x53D8;&#x91CF;&#x7684;&#x7533;&#x660E;&#x524D;&#x52A0;&#x4E0A;const&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5C31;&#x53EF;&#x5C06;&#x5176;&#x53D8;&#x4E3A;&#x5E38;&#x91CF;&#x3002;</li>
-<li>&#x5E38;&#x91CF;&#x547D;&#x540D;&#x901A;&#x5E38;&#x7528;&#x5168;&#x5927;&#x5B57;&#x5B57;&#x6BCD;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x7528;_&#x9694;&#x5F00;&#x3002;</li>
-<li>&#x5E38;&#x91CF;&#x5FC5;&#x9700;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x3002;<pre><code class="lang-CS"><span class="hljs-comment">// &#x5E38;&#x91CF;&#x7533;&#x660E;&#x7684;&#x683C;&#x5F0F;&#xFF1A;</span>
-<span class="hljs-comment">// const &#x6570;&#x636E;&#x7C7B;&#x578B; &#x5E38;&#x91CF;&#x540D; = &#x503C;;</span>
-<span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.1415927</span>;
-PI = <span class="hljs-number">3.14</span>; <span class="hljs-comment">// &#x9519;&#x8BEF;&#x3002;&#x5E38;&#x91CF;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x3002;</span>
-</code></pre>
+<li>&#x82F1;&#x8BED;&#x4E0D;&#x597D;&#x662F;&#x5426;&#x4F1A;&#x5F71;&#x54CD;&#x5B66;&#x7F16;&#x7A0B;&#xFF1F;</li>
+<li>&#x9700;&#x4E0D;&#x9700;&#x8981;&#x4E70;&#x4E00;&#x672C;&#x8BFE;&#x5916;&#x53C2;&#x8003;&#x4E66;&#xFF1F;</li>
+<li>&#x8001;&#x5E08;&#x8BB2;&#x7684;&#x65F6;&#x5019;&#x6211;&#x90FD;&#x80FD;&#x542C;&#x61C2;&#xFF0C;&#x4F46;&#x81EA;&#x5DF1;&#x5199;&#x5C31;&#x5199;&#x4E0D;&#x51FA;&#x6765;&#x4E86;&#x3002;</li>
+<li>&#x7F16;&#x7A0B;&#x96BE;&#x4E0D;&#x96BE;&#xFF1F;<ul>
+<li>&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E3A;&#x4E86;&#x80FD;&#x5199;&#x51FA;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x8981;&#x4FDD;&#x8BC1;&#x7F16;&#x7A0B;&#x8BED;&#x6CD5;&#x7684;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x6BCF;&#x4E2A;&#x8BED;&#x53E5;&#x53EA;&#x662F;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x53EA;&#x6709;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x4FDD;&#x8BC1;&#x7075;&#x6D3B;&#x6027;&#x3002;&#x6240;&#x4EE5;&#x5B66;&#x4E60;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x7075;&#x6D3B;&#x8FD0;&#x884C;&#x4ED6;&#x4EEC;&#x6BD4;&#x8F83;&#x96BE;&#x3002;</li>
+<li>&#x5B66;&#x7F16;&#x7A0B;&#x901A;&#x5E38;&#x8981;&#x4ECE;&#x5B66;&#x4E60;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5F00;&#x59CB;&#xFF0C;&#x800C;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x7684;&#x5B66;&#x4E60;&#x5F80;&#x5F80;&#x6BD4;&#x8F83;&#x62BD;&#x8C61;&#xFF0C;&#x800C;&#x4E14;&#x903B;&#x8F91;&#x6027;&#x5F3A;&#x3002;&#x6240;&#x4EE5;&#x5B66;&#x7F16;&#x7A0B;&#x5F80;&#x5F80;&#x662F;&#x5148;&#x96BE;&#x540E;&#x6613;&#xFF0C;&#x8FD9;&#x70B9;&#x548C;&#x522B;&#x7684;&#x4E13;&#x4E1A;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x52A0;&#x5927;&#x4E86;&#x5B66;&#x4E60;&#x7684;&#x96BE;&#x5EA6;&#x3002;</li>
+</ul>
 </li>
+<li>&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x5B66;&#x4E0D;&#x4F1A;&#x600E;&#x4E48;&#x529E;&#xFF1F;<ul>
+<li>&#x8BED;&#x6CD5;&#x95EE;&#x9898;&#x4E00;&#x5B9A;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7EC3;&#x4E60;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x901A;&#x5E38;&#x7ECF;&#x8FC7;&#x4E00;&#x4E2A;&#x6708;&#x7684;&#x7EC3;&#x4E60;&#x5C31;&#x80FD;&#x4FDD;&#x8BC1;&#x4E0D;&#x51FA;&#x73B0;&#x8BED;&#x6CD5;&#x9519;&#x8BEF;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5E38;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;">&#x5E38;&#x89C1;&#x7684;&#x9519;&#x8BEF;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;</h2>
+<ul>
+<li>&#x82B1;&#x5927;&#x91CF;&#x65F6;&#x95F4;&#x505A;&#x9879;&#x76EE;&#xFF0C;&#x5374;&#x5F88;&#x5C11;&#x590D;&#x4E60;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3002;<ul>
+<li>&#x6848;&#x4F8B;&#x6559;&#x5B66;&#x7684;&#x76EE;&#x7684;&#x4E0D;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x67D0;&#x4E2A;&#x529F;&#x80FD;&#x3002;&#x800C;&#x662F;&#x4E3A;&#x4E86;&#x5728;&#x5B9E;&#x6218;&#x4E2D;&#x5DE9;&#x56FA;&#x57FA;&#x7840;&#x77E5;&#x8BC6;&#x3002;</li>
+</ul>
+</li>
+<li>&#x51ED;&#x6620;&#x50CF;&#x8FD8;&#x539F;&#x8001;&#x5E08;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x601D;&#x8003;&#x8FC7;&#x7A0B;&#x3002;<ul>
+<li>&#x5728;&#x5199;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x73B0;&#x5728;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#x3002;</li>
+</ul>
+</li>
+<li>&#x4E0A;&#x6765;&#x5C31;&#x5F00;&#x59CB;&#x5199;&#x4EE3;&#x7801;&#x3002;<ul>
+<li>&#x7A0B;&#x5E8F;&#x5458;&#x6838;&#x5FC3;&#x7684;&#x5DE5;&#x4F5C;&#x5728;&#x4E8E;&#x7F16;&#x7A0B;&#x524D;&#x7684;&#x601D;&#x8003;&#xFF0C;&#x800C;&#x5199;&#x4EE3;&#x7801;&#x53EA;&#x662F;&#x201C;&#x770B;&#x5F97;&#x89C1;&#x201D;&#x7684;&#x90A3;&#x90E8;&#x5206;&#x5DE5;&#x4F5C;&#xFF0C;&#x201C;&#x770B;&#x4E0D;&#x89C1;&#x201D;&#x7684;&#x90A3;&#x90E8;&#x5206;&#x601D;&#x8003;&#x5DE5;&#x4F5C;&#x66F4;&#x91CD;&#x8981;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;">&#x5B66;&#x4E60;&#x5EFA;&#x8BAE;</h2>
+<ul>
+<li>&#x5148;&#x638C;&#x63E1;&#x8BED;&#x6CD5;&#xFF0C;&#x518D;&#x5B66;&#x4F1A;&#x5C06;&#x60F3;&#x6CD5;&#x8F6C;&#x5316;&#x4E3A;&#x4EE3;&#x7801;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x53BB;&#x8003;&#x8651;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0E;&#x7B97;&#x6CD5;&#x7B49;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;<ul>
+<li>&#x521D;&#x671F;&#x5148;&#x901A;&#x8FC7;&#x5927;&#x91CF;&#x7684;&#x7EC3;&#x4E60;&#x548C;&#x590D;&#x4E60;&#x4FDD;&#x8BC1;&#x8BED;&#x6CD5;&#x4E0D;&#x5199;&#x9519;&#x3002;</li>
+<li>&#x7136;&#x540E;&#x7EC3;&#x4E60;&#x5C06;&#x8001;&#x5E08;&#x544A;&#x8BC9;&#x4F60;&#x7684;&#x7B97;&#x6CD5;&#x7528;&#x4EE3;&#x7801;&#x53BB;&#x5B9E;&#x73B0;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x4E0D;&#x7528;&#x8003;&#x8651;&#x4EBA;&#x5BB6;&#x662F;&#x600E;&#x4E48;&#x60F3;&#x5230;&#x7684;&#xFF0C;&#x53EA;&#x8003;&#x8651;&#x600E;&#x4E48;&#x7528;&#x4EE3;&#x7801;&#x53BB;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#x624D;&#x662F;&#x4F53;&#x4F1A;&#x8001;&#x5E08;&#x662F;&#x600E;&#x4E48;&#x53BB;&#x5206;&#x6790;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x600E;&#x4E48;&#x53BB;&#x5C06;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#x5206;&#x89E3;&#x6210;&#x4E00;&#x4E2A;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x600E;&#x4E48;&#x53BB;&#x5C06;&#x60F3;&#x6CD5;&#x8F6C;&#x5316;&#x6210;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+</li>
+<li>&#x5173;&#x6CE8;&#x6570;&#x636E;&#x800C;&#x975E;&#x8868;&#x73B0;&#x3002;</li>
+<li>&#x540C;&#x4E00;&#x65F6;&#x95F4;&#x53EA;&#x8003;&#x8651;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;</li>
 </ul>
 
                     
@@ -922,10 +951,10 @@ PI = <span class="hljs-number">3.14</span>; <span class="hljs-comment">// &#x951
         </div>
 
         
-        <a href="../Data/veriable.html" class="navigation navigation-prev " aria-label="Previous page: 变量"><i class="fa fa-angle-left"></i></a>
+        <a href="../Extend/grammar.html" class="navigation navigation-prev " aria-label="Previous page: C#语法结构总结"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Data/enum.html" class="navigation navigation-next " aria-label="Next page: 枚举"><i class="fa fa-angle-right"></i></a>
+        <a href="../ref.html" class="navigation navigation-next " aria-label="Next page: 值类型与引用类型"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

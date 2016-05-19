@@ -53,7 +53,7 @@
         data-chapter-title="常量"
         data-filepath="Data/const.md"
         data-basepath=".."
-        data-revision="Thu May 19 2016 22:33:34 GMT+0800 (中国标准时间)"
+        data-revision="Thu May 19 2016 22:54:01 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -894,6 +894,7 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="&#x5E38;&#x91CF;">&#x5E38;&#x91CF;</h1>
+<h2 id="&#x5E38;&#x91CF;&#x7684;&#x5B9A;&#x4E49;">&#x5E38;&#x91CF;&#x7684;&#x5B9A;&#x4E49;</h2>
 <ul>
 <li>&#x5E38;&#x91CF;&#x4E00;&#x4E2A;&#x4E0D;&#x80FD;&#x6539;&#x53D8;&#x7684;&#x6570;&#x636E;&#x3002;</li>
 <li><p>&#x5728;&#x53D8;&#x91CF;&#x7684;&#x7533;&#x660E;&#x524D;&#x52A0;&#x4E0A;const&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x5C31;&#x53EF;&#x5C06;&#x5176;&#x53D8;&#x4E3A;&#x5E38;&#x91CF;&#x3002;</p>
@@ -903,8 +904,29 @@
 </li>
 <li><p>&#x5E38;&#x91CF;&#x547D;&#x540D;&#x901A;&#x5E38;&#x7528;&#x5168;&#x5927;&#x5B57;&#x5B57;&#x6BCD;&#xFF0C;&#x5355;&#x8BCD;&#x95F4;&#x7528;_&#x9694;&#x5F00;&#x3002;</p>
 </li>
-<li>&#x5E38;&#x91CF;&#x5FC5;&#x9700;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x3002;<pre><code class="lang-CS"><span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.1415927</span>;
+<li>&#x5E38;&#x91CF;&#x5FC5;&#x9700;&#x5728;&#x7533;&#x660E;&#x65F6;&#x521D;&#x59CB;&#x5316;&#x3002;</li>
+<li>&#x521D;&#x59CB;&#x5316;&#x5E38;&#x91CF;&#x65F6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD0;&#x7B97;&#x3002;<pre><code class="lang-CS"><span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.1415927</span>;
 PI = <span class="hljs-number">3.14</span>; <span class="hljs-comment">// &#x9519;&#x8BEF;&#x3002;&#x5E38;&#x91CF;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;&#x3002;</span>
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x5E38;&#x91CF;&#x7684;&#x4F5C;&#x7528;">&#x5E38;&#x91CF;&#x7684;&#x4F5C;&#x7528;</h2>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x6570;&#x636E;<pre><code class="lang-CS"><span class="hljs-comment">// &#x5706;&#x5468;&#x7387;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> PI = <span class="hljs-number">3.1415927</span>;
+<span class="hljs-comment">// 1&#x4E2A;&#x6B27;&#x62C9;&#x89D2;&#x5BF9;&#x5E94;&#x7684;&#x5F27;&#x5EA6;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> Deg2Rad = (<span class="hljs-number">2</span> * PI)/<span class="hljs-number">360.0</span>;
+<span class="hljs-comment">// 1&#x4E2A;&#x5F27;&#x5EA6;&#x5BF9;&#x5E94;&#x7684;&#x6B27;&#x62C9;&#x89D2;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">double</span> Rad2Deg = <span class="hljs-number">360.0</span> / (<span class="hljs-number">2</span> * PI);
+</code></pre>
+</li>
+<li>&#x63D0;&#x9AD8;&#x53EF;&#x8BFB;&#x6027;<pre><code class="lang-CS"><span class="hljs-comment">// &#x7ED9;&#x6BCF;&#x4E2A;&#x5B63;&#x8282;&#x4E00;&#x4E2A;&#x7F16;&#x53F7;</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> SPRING = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> SUMMER = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> FALL = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> WINTER = <span class="hljs-number">3</span>;
+<span class="hljs-comment">// &#x5F53;&#x524D;&#x5B63;&#x8282;</span>
+<span class="hljs-keyword">int</span> currentSeason = SUMMER; <span class="hljs-comment">// &#x5F53;&#x524D;&#x5B63;&#x8282;&#x662F;&#x590F;&#x5929;&#x3002;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E0D;&#x7528;&#x53BB;&#x8BB0;&#x5FC6;&#x590F;&#x5929;&#x7684;&#x7F16;&#x53F7;&#x3002;</span>
 </code></pre>
 </li>
 </ul>
